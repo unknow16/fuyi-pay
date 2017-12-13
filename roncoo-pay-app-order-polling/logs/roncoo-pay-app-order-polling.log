@@ -1,0 +1,1142 @@
+[INFO ][20171212 10:31:07,325][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Tue Dec 12 10:31:07 CST 2017]; root of context hierarchy
+[INFO ][20171212 10:31:07,416][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171212 10:31:07,599][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171212 10:31:07,643][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171212 10:31:07,848][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171212 10:31:07,870][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171212 10:31:07,892][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 10:31:07,903][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171212 10:31:07,913][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171212 10:31:07,925][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 10:31:07,934][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,935][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,936][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,936][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,937][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,938][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:07,939][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 10:31:08,301][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171212 10:31:08,302][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171212 10:31:08,398][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13eb8acf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,aliF2FPaySubmit,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,targetConnectionFactory,pooledConnectionFactory,connectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171212 10:31:08,763][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171212 10:31:10,043][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171212 10:31:10,047][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 10:31:10,473][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-51258-1513045870346-1:1,clientId=null,started=false}] }
+[INFO ][20171212 10:31:11,197][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 10:31:11,198][App:72] ==>startThread
+[INFO ][20171212 10:31:11,201][App:55] == context start
+[INFO ][20171212 10:31:11,301][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:31:11,301][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:31:11,301][App$1:83] ==>tasks.size():0
+[INFO ][20171212 10:31:11,325][PollingMessageListener:53] == receive bankOrderNo :66662017121010000001
+[INFO ][20171212 10:31:11,533][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000001
+[INFO ][20171212 10:31:11,536][PollingQueue:67] ===>bank order No  66662017121010000001, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 533
+[INFO ][20171212 10:31:11,537][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,554][PollingTask:68] ===>notify id:cbc8cb725bae4897b95909c85f2ad962, nextNotifyTime:2017-12-12 10:33:11 533
+[INFO ][20171212 10:31:11,556][PollingMessageListener:53] == receive bankOrderNo :66662017121010000002
+[INFO ][20171212 10:31:11,557][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000002
+[INFO ][20171212 10:31:11,557][PollingQueue:67] ===>bank order No  66662017121010000002, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 557
+[INFO ][20171212 10:31:11,557][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,558][PollingTask:68] ===>notify id:29e9492809fc4693b33cc54fbb65b8f1, nextNotifyTime:2017-12-12 10:33:11 557
+[INFO ][20171212 10:31:11,558][PollingMessageListener:53] == receive bankOrderNo :66662017121010000003
+[INFO ][20171212 10:31:11,559][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000003
+[INFO ][20171212 10:31:11,559][PollingQueue:67] ===>bank order No  66662017121010000003, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 559
+[INFO ][20171212 10:31:11,559][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,559][PollingTask:68] ===>notify id:2c7628f0744d4c049583daf242ed96bf, nextNotifyTime:2017-12-12 10:33:11 559
+[INFO ][20171212 10:31:11,560][PollingMessageListener:53] == receive bankOrderNo :66662017121010000004
+[INFO ][20171212 10:31:11,560][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000004
+[INFO ][20171212 10:31:11,560][PollingQueue:67] ===>bank order No  66662017121010000004, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 560
+[INFO ][20171212 10:31:11,560][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,560][PollingTask:68] ===>notify id:0116a1e49bba41a8a7bfbabf37b41903, nextNotifyTime:2017-12-12 10:33:11 560
+[INFO ][20171212 10:31:11,561][PollingMessageListener:53] == receive bankOrderNo :66662017121010000005
+[INFO ][20171212 10:31:11,561][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000005
+[INFO ][20171212 10:31:11,561][PollingQueue:67] ===>bank order No  66662017121010000005, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 561
+[INFO ][20171212 10:31:11,561][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,562][PollingTask:68] ===>notify id:d9bc006a8da24c3c81eb9bd2aa985f5d, nextNotifyTime:2017-12-12 10:33:11 561
+[INFO ][20171212 10:31:11,562][PollingMessageListener:53] == receive bankOrderNo :66662017121010000006
+[INFO ][20171212 10:31:11,562][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000006
+[INFO ][20171212 10:31:11,562][PollingQueue:67] ===>bank order No  66662017121010000006, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 562
+[INFO ][20171212 10:31:11,562][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,563][PollingTask:68] ===>notify id:38c9a5ed2771465689c624892e78b9f1, nextNotifyTime:2017-12-12 10:33:11 562
+[INFO ][20171212 10:31:11,563][PollingMessageListener:53] == receive bankOrderNo :66662017121010000007
+[INFO ][20171212 10:31:11,563][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000007
+[INFO ][20171212 10:31:11,563][PollingQueue:67] ===>bank order No  66662017121010000007, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 563
+[INFO ][20171212 10:31:11,563][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,564][PollingTask:68] ===>notify id:ceda9a70385d44fbb22d69e1d43b9118, nextNotifyTime:2017-12-12 10:33:11 563
+[INFO ][20171212 10:31:11,564][PollingMessageListener:53] == receive bankOrderNo :66662017121010000008
+[INFO ][20171212 10:31:11,564][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000008
+[INFO ][20171212 10:31:11,565][PollingQueue:67] ===>bank order No  66662017121010000008, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 564
+[INFO ][20171212 10:31:11,565][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,566][PollingTask:68] ===>notify id:bfc26d4edb6640e09214a6c02708d72e, nextNotifyTime:2017-12-12 10:33:11 564
+[INFO ][20171212 10:31:11,566][PollingMessageListener:53] == receive bankOrderNo :66662017121010000009
+[INFO ][20171212 10:31:11,566][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000009
+[INFO ][20171212 10:31:11,567][PollingQueue:67] ===>bank order No  66662017121010000009, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 566
+[INFO ][20171212 10:31:11,567][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,567][PollingTask:68] ===>notify id:11c6354ed8b843b1987825a37549a754, nextNotifyTime:2017-12-12 10:33:11 566
+[INFO ][20171212 10:31:11,568][PollingMessageListener:53] == receive bankOrderNo :66662017121010000010
+[INFO ][20171212 10:31:11,568][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000010
+[INFO ][20171212 10:31:11,568][PollingQueue:67] ===>bank order No  66662017121010000010, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 568
+[INFO ][20171212 10:31:11,568][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,570][PollingTask:68] ===>notify id:f8782774cbeb447aae62309776c3fb92, nextNotifyTime:2017-12-12 10:33:11 568
+[INFO ][20171212 10:31:11,572][PollingMessageListener:53] == receive bankOrderNo :66662017121010000011
+[INFO ][20171212 10:31:11,572][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000011
+[INFO ][20171212 10:31:11,572][PollingQueue:67] ===>bank order No  66662017121010000011, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 572
+[INFO ][20171212 10:31:11,573][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,573][PollingTask:68] ===>notify id:a032dca421cb433b98a10aa15198213d, nextNotifyTime:2017-12-12 10:33:11 572
+[INFO ][20171212 10:31:11,573][PollingMessageListener:53] == receive bankOrderNo :66662017121010000012
+[INFO ][20171212 10:31:11,574][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000012
+[INFO ][20171212 10:31:11,574][PollingQueue:67] ===>bank order No  66662017121010000012, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 574
+[INFO ][20171212 10:31:11,574][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,575][PollingTask:68] ===>notify id:74b2bfde59d241fcb18c13b77100f4e4, nextNotifyTime:2017-12-12 10:33:11 574
+[INFO ][20171212 10:31:11,575][PollingMessageListener:53] == receive bankOrderNo :66662017121010000013
+[INFO ][20171212 10:31:11,575][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000013
+[INFO ][20171212 10:31:11,575][PollingQueue:67] ===>bank order No  66662017121010000013, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 575
+[INFO ][20171212 10:31:11,576][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,576][PollingTask:68] ===>notify id:75cd394515564863ad476ef407f6e0cd, nextNotifyTime:2017-12-12 10:33:11 575
+[INFO ][20171212 10:31:11,577][PollingMessageListener:53] == receive bankOrderNo :66662017121010000014
+[INFO ][20171212 10:31:11,577][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000014
+[INFO ][20171212 10:31:11,577][PollingQueue:67] ===>bank order No  66662017121010000014, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 577
+[INFO ][20171212 10:31:11,578][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,578][PollingTask:68] ===>notify id:06f41b68b36d4689840e93b31f6e1d3f, nextNotifyTime:2017-12-12 10:33:11 577
+[INFO ][20171212 10:31:11,579][PollingMessageListener:53] == receive bankOrderNo :66662017121010000015
+[INFO ][20171212 10:31:11,579][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000015
+[INFO ][20171212 10:31:11,579][PollingQueue:67] ===>bank order No  66662017121010000015, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 579
+[INFO ][20171212 10:31:11,579][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,580][PollingTask:68] ===>notify id:c62416d5ffc34150a9e4ff6ef78e5d14, nextNotifyTime:2017-12-12 10:33:11 579
+[INFO ][20171212 10:31:11,580][PollingMessageListener:53] == receive bankOrderNo :66662017121010000016
+[INFO ][20171212 10:31:11,581][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000016
+[INFO ][20171212 10:31:11,581][PollingQueue:67] ===>bank order No  66662017121010000016, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 581
+[INFO ][20171212 10:31:11,581][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,581][PollingTask:68] ===>notify id:dd5a10ef3f7140cbb5d2bdb44e18c5cd, nextNotifyTime:2017-12-12 10:33:11 581
+[INFO ][20171212 10:31:11,581][PollingMessageListener:53] == receive bankOrderNo :66662017121010000017
+[INFO ][20171212 10:31:11,582][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000017
+[INFO ][20171212 10:31:11,582][PollingQueue:67] ===>bank order No  66662017121010000017, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 582
+[INFO ][20171212 10:31:11,582][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,582][PollingTask:68] ===>notify id:ec864a76cf834e3780ea40b8b5f9ae0a, nextNotifyTime:2017-12-12 10:33:11 582
+[INFO ][20171212 10:31:11,583][PollingMessageListener:53] == receive bankOrderNo :66662017121010000018
+[INFO ][20171212 10:31:11,583][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000018
+[INFO ][20171212 10:31:11,584][PollingQueue:67] ===>bank order No  66662017121010000018, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 584
+[INFO ][20171212 10:31:11,584][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,584][PollingTask:68] ===>notify id:745f62da234e40a8a5ddd3888e62f647, nextNotifyTime:2017-12-12 10:33:11 584
+[INFO ][20171212 10:31:11,585][PollingMessageListener:53] == receive bankOrderNo :66662017121010000019
+[INFO ][20171212 10:31:11,585][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000019
+[INFO ][20171212 10:31:11,586][PollingQueue:67] ===>bank order No  66662017121010000019, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 585
+[INFO ][20171212 10:31:11,586][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,586][PollingTask:68] ===>notify id:52385be916df4e629064446b3ad877fe, nextNotifyTime:2017-12-12 10:33:11 585
+[INFO ][20171212 10:31:11,587][PollingMessageListener:53] == receive bankOrderNo :66662017121010000020
+[INFO ][20171212 10:31:11,587][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000020
+[INFO ][20171212 10:31:11,587][PollingQueue:67] ===>bank order No  66662017121010000020, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 587
+[INFO ][20171212 10:31:11,588][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,588][PollingTask:68] ===>notify id:1527e618618c4d7c8c617186e2354955, nextNotifyTime:2017-12-12 10:33:11 587
+[INFO ][20171212 10:31:11,588][PollingMessageListener:53] == receive bankOrderNo :66662017121210000021
+[INFO ][20171212 10:31:11,589][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000021
+[INFO ][20171212 10:31:11,589][PollingQueue:67] ===>bank order No  66662017121210000021, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 589
+[INFO ][20171212 10:31:11,589][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,590][PollingTask:68] ===>notify id:f817f9e91a9742c89e6741779f2baa86, nextNotifyTime:2017-12-12 10:33:11 589
+[INFO ][20171212 10:31:11,590][PollingMessageListener:53] == receive bankOrderNo :66662017121210000022
+[INFO ][20171212 10:31:11,591][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000022
+[INFO ][20171212 10:31:11,591][PollingQueue:67] ===>bank order No  66662017121210000022, 上次通知时间lastNotifyTime:2017-12-12 10:31:11 591
+[INFO ][20171212 10:31:11,591][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 10:31:11,591][PollingTask:68] ===>notify id:cb4c167b451a4c0c8bee41da7290bd34, nextNotifyTime:2017-12-12 10:33:11 591
+[INFO ][20171212 10:33:11,538][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:11,638][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:11,638][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:11,639][App$1:83] ==>tasks.size():21
+[INFO ][20171212 10:33:11,739][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:11,739][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:11,739][App$1:83] ==>tasks.size():20
+[INFO ][20171212 10:33:11,839][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:11,840][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:11,840][App$1:83] ==>tasks.size():19
+[INFO ][20171212 10:33:11,940][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:11,940][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:11,940][App$1:83] ==>tasks.size():18
+[INFO ][20171212 10:33:12,040][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,040][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,041][App$1:83] ==>tasks.size():17
+[INFO ][20171212 10:33:12,141][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,141][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,141][App$1:83] ==>tasks.size():16
+[INFO ][20171212 10:33:12,242][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,243][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,243][App$1:83] ==>tasks.size():15
+[INFO ][20171212 10:33:12,343][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,343][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,343][App$1:83] ==>tasks.size():14
+[INFO ][20171212 10:33:12,447][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,448][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,448][App$1:83] ==>tasks.size():13
+[INFO ][20171212 10:33:12,548][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,548][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,549][App$1:83] ==>tasks.size():12
+[INFO ][20171212 10:33:12,650][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,650][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,651][App$1:83] ==>tasks.size():11
+[INFO ][20171212 10:33:12,751][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,751][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,751][App$1:83] ==>tasks.size():10
+[INFO ][20171212 10:33:12,851][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,851][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,851][App$1:83] ==>tasks.size():9
+[INFO ][20171212 10:33:12,951][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:12,951][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:12,952][App$1:83] ==>tasks.size():8
+[INFO ][20171212 10:33:13,052][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,052][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,054][App$1:83] ==>tasks.size():7
+[INFO ][20171212 10:33:13,154][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,154][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,154][App$1:83] ==>tasks.size():6
+[INFO ][20171212 10:33:13,254][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,254][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,254][App$1:83] ==>tasks.size():5
+[WARN ][20171212 10:33:13,256][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,282][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,282][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000001
+[INFO ][20171212 10:33:13,282][PollingQueue:67] ===>bank order No  66662017121010000001, 上次通知时间lastNotifyTime:2017-12-12 10:33:11 538
+[INFO ][20171212 10:33:13,282][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,283][PollingTask:68] ===>notify id:cbc8cb725bae4897b95909c85f2ad962, nextNotifyTime:2017-12-12 10:36:11 538
+[INFO ][20171212 10:33:13,283][PollingPersist:67] ===>bank order 66662017121010000001 need processing again 
+[INFO ][20171212 10:33:13,283][App$1$1:90] ==>tasks.size():5
+[INFO ][20171212 10:33:13,283][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:13,339][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,340][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,340][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000002
+[INFO ][20171212 10:33:13,341][PollingQueue:67] ===>bank order No  66662017121010000002, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 283
+[INFO ][20171212 10:33:13,341][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,341][PollingTask:68] ===>notify id:29e9492809fc4693b33cc54fbb65b8f1, nextNotifyTime:2017-12-12 10:36:13 283
+[INFO ][20171212 10:33:13,341][PollingPersist:67] ===>bank order 66662017121010000002 need processing again 
+[INFO ][20171212 10:33:13,341][App$1$1:90] ==>tasks.size():6
+[INFO ][20171212 10:33:13,341][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:13,354][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,354][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,354][App$1:83] ==>tasks.size():6
+[WARN ][20171212 10:33:13,397][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,401][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,401][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000003
+[INFO ][20171212 10:33:13,402][PollingQueue:67] ===>bank order No  66662017121010000003, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 341
+[INFO ][20171212 10:33:13,402][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,402][PollingTask:68] ===>notify id:2c7628f0744d4c049583daf242ed96bf, nextNotifyTime:2017-12-12 10:36:13 341
+[INFO ][20171212 10:33:13,402][PollingPersist:67] ===>bank order 66662017121010000003 need processing again 
+[INFO ][20171212 10:33:13,402][App$1$1:90] ==>tasks.size():6
+[INFO ][20171212 10:33:13,402][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:13,454][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,454][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,455][App$1:83] ==>tasks.size():6
+[WARN ][20171212 10:33:13,458][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,459][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,460][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000004
+[INFO ][20171212 10:33:13,460][PollingQueue:67] ===>bank order No  66662017121010000004, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 402
+[INFO ][20171212 10:33:13,460][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,460][PollingTask:68] ===>notify id:0116a1e49bba41a8a7bfbabf37b41903, nextNotifyTime:2017-12-12 10:36:13 402
+[INFO ][20171212 10:33:13,460][PollingPersist:67] ===>bank order 66662017121010000004 need processing again 
+[INFO ][20171212 10:33:13,460][App$1$1:90] ==>tasks.size():6
+[INFO ][20171212 10:33:13,460][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:13,535][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,540][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,541][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000005
+[INFO ][20171212 10:33:13,541][PollingQueue:67] ===>bank order No  66662017121010000005, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 460
+[INFO ][20171212 10:33:13,542][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,542][PollingTask:68] ===>notify id:d9bc006a8da24c3c81eb9bd2aa985f5d, nextNotifyTime:2017-12-12 10:36:13 460
+[INFO ][20171212 10:33:13,543][PollingPersist:67] ===>bank order 66662017121010000005 need processing again 
+[INFO ][20171212 10:33:13,543][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 10:33:13,544][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:13,556][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,556][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,559][App$1:83] ==>tasks.size():7
+[WARN ][20171212 10:33:13,606][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,608][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,608][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000006
+[INFO ][20171212 10:33:13,608][PollingQueue:67] ===>bank order No  66662017121010000006, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 544
+[INFO ][20171212 10:33:13,608][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,611][PollingTask:68] ===>notify id:38c9a5ed2771465689c624892e78b9f1, nextNotifyTime:2017-12-12 10:36:13 544
+[INFO ][20171212 10:33:13,611][PollingPersist:67] ===>bank order 66662017121010000006 need processing again 
+[INFO ][20171212 10:33:13,611][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 10:33:13,612][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:13,661][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,661][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,661][App$1:83] ==>tasks.size():7
+[WARN ][20171212 10:33:13,670][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:13,672][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:13,672][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000007
+[INFO ][20171212 10:33:13,672][PollingQueue:67] ===>bank order No  66662017121010000007, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 612
+[INFO ][20171212 10:33:13,672][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:13,672][PollingTask:68] ===>notify id:ceda9a70385d44fbb22d69e1d43b9118, nextNotifyTime:2017-12-12 10:36:13 612
+[INFO ][20171212 10:33:13,672][PollingPersist:67] ===>bank order 66662017121010000007 need processing again 
+[INFO ][20171212 10:33:13,673][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 10:33:13,673][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 10:33:13,761][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:33:13,761][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:33:13,761][App$1:83] ==>tasks.size():7
+[WARN ][20171212 10:33:14,449][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,451][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,451][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000008
+[INFO ][20171212 10:33:14,452][PollingQueue:67] ===>bank order No  66662017121010000008, 上次通知时间lastNotifyTime:2017-12-12 10:33:13 673
+[INFO ][20171212 10:33:14,452][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,452][PollingTask:68] ===>notify id:bfc26d4edb6640e09214a6c02708d72e, nextNotifyTime:2017-12-12 10:36:13 673
+[INFO ][20171212 10:33:14,452][PollingPersist:67] ===>bank order 66662017121010000008 need processing again 
+[INFO ][20171212 10:33:14,452][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 10:33:14,452][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,509][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,510][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,510][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000009
+[INFO ][20171212 10:33:14,511][PollingQueue:67] ===>bank order No  66662017121010000009, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 452
+[INFO ][20171212 10:33:14,511][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,511][PollingTask:68] ===>notify id:11c6354ed8b843b1987825a37549a754, nextNotifyTime:2017-12-12 10:36:14 452
+[INFO ][20171212 10:33:14,512][PollingPersist:67] ===>bank order 66662017121010000009 need processing again 
+[INFO ][20171212 10:33:14,512][App$1$1:90] ==>tasks.size():9
+[INFO ][20171212 10:33:14,512][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,573][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,576][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,576][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000010
+[INFO ][20171212 10:33:14,576][PollingQueue:67] ===>bank order No  66662017121010000010, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 512
+[INFO ][20171212 10:33:14,577][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,577][PollingTask:68] ===>notify id:f8782774cbeb447aae62309776c3fb92, nextNotifyTime:2017-12-12 10:36:14 512
+[INFO ][20171212 10:33:14,577][PollingPersist:67] ===>bank order 66662017121010000010 need processing again 
+[INFO ][20171212 10:33:14,577][App$1$1:90] ==>tasks.size():10
+[INFO ][20171212 10:33:14,578][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,640][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,641][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,641][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000011
+[INFO ][20171212 10:33:14,641][PollingQueue:67] ===>bank order No  66662017121010000011, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 577
+[INFO ][20171212 10:33:14,641][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,642][PollingTask:68] ===>notify id:a032dca421cb433b98a10aa15198213d, nextNotifyTime:2017-12-12 10:36:14 577
+[INFO ][20171212 10:33:14,642][PollingPersist:67] ===>bank order 66662017121010000011 need processing again 
+[INFO ][20171212 10:33:14,642][App$1$1:90] ==>tasks.size():11
+[INFO ][20171212 10:33:14,642][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,698][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,699][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,700][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000012
+[INFO ][20171212 10:33:14,700][PollingQueue:67] ===>bank order No  66662017121010000012, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 642
+[INFO ][20171212 10:33:14,700][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,700][PollingTask:68] ===>notify id:74b2bfde59d241fcb18c13b77100f4e4, nextNotifyTime:2017-12-12 10:36:14 642
+[INFO ][20171212 10:33:14,700][PollingPersist:67] ===>bank order 66662017121010000012 need processing again 
+[INFO ][20171212 10:33:14,700][App$1$1:90] ==>tasks.size():12
+[INFO ][20171212 10:33:14,700][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,756][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,757][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,757][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000013
+[INFO ][20171212 10:33:14,757][PollingQueue:67] ===>bank order No  66662017121010000013, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 700
+[INFO ][20171212 10:33:14,757][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,758][PollingTask:68] ===>notify id:75cd394515564863ad476ef407f6e0cd, nextNotifyTime:2017-12-12 10:36:14 700
+[INFO ][20171212 10:33:14,758][PollingPersist:67] ===>bank order 66662017121010000013 need processing again 
+[INFO ][20171212 10:33:14,758][App$1$1:90] ==>tasks.size():13
+[INFO ][20171212 10:33:14,758][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,814][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,815][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,815][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000014
+[INFO ][20171212 10:33:14,815][PollingQueue:67] ===>bank order No  66662017121010000014, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 758
+[INFO ][20171212 10:33:14,815][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,815][PollingTask:68] ===>notify id:06f41b68b36d4689840e93b31f6e1d3f, nextNotifyTime:2017-12-12 10:36:14 758
+[INFO ][20171212 10:33:14,815][PollingPersist:67] ===>bank order 66662017121010000014 need processing again 
+[INFO ][20171212 10:33:14,815][App$1$1:90] ==>tasks.size():14
+[INFO ][20171212 10:33:14,815][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,878][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,881][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,881][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000015
+[INFO ][20171212 10:33:14,881][PollingQueue:67] ===>bank order No  66662017121010000015, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 815
+[INFO ][20171212 10:33:14,881][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,882][PollingTask:68] ===>notify id:c62416d5ffc34150a9e4ff6ef78e5d14, nextNotifyTime:2017-12-12 10:36:14 815
+[INFO ][20171212 10:33:14,882][PollingPersist:67] ===>bank order 66662017121010000015 need processing again 
+[INFO ][20171212 10:33:14,882][App$1$1:90] ==>tasks.size():15
+[INFO ][20171212 10:33:14,882][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:14,946][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:14,950][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:14,950][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000016
+[INFO ][20171212 10:33:14,950][PollingQueue:67] ===>bank order No  66662017121010000016, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 882
+[INFO ][20171212 10:33:14,951][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:14,951][PollingTask:68] ===>notify id:dd5a10ef3f7140cbb5d2bdb44e18c5cd, nextNotifyTime:2017-12-12 10:36:14 882
+[INFO ][20171212 10:33:14,951][PollingPersist:67] ===>bank order 66662017121010000016 need processing again 
+[INFO ][20171212 10:33:14,951][App$1$1:90] ==>tasks.size():16
+[INFO ][20171212 10:33:14,951][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,012][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,013][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,013][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000017
+[INFO ][20171212 10:33:15,013][PollingQueue:67] ===>bank order No  66662017121010000017, 上次通知时间lastNotifyTime:2017-12-12 10:33:14 951
+[INFO ][20171212 10:33:15,013][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,013][PollingTask:68] ===>notify id:ec864a76cf834e3780ea40b8b5f9ae0a, nextNotifyTime:2017-12-12 10:36:14 951
+[INFO ][20171212 10:33:15,014][PollingPersist:67] ===>bank order 66662017121010000017 need processing again 
+[INFO ][20171212 10:33:15,014][App$1$1:90] ==>tasks.size():17
+[INFO ][20171212 10:33:15,014][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,320][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,323][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,323][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000018
+[INFO ][20171212 10:33:15,324][PollingQueue:67] ===>bank order No  66662017121010000018, 上次通知时间lastNotifyTime:2017-12-12 10:33:15 014
+[INFO ][20171212 10:33:15,324][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,324][PollingTask:68] ===>notify id:745f62da234e40a8a5ddd3888e62f647, nextNotifyTime:2017-12-12 10:36:15 014
+[INFO ][20171212 10:33:15,324][PollingPersist:67] ===>bank order 66662017121010000018 need processing again 
+[INFO ][20171212 10:33:15,325][App$1$1:90] ==>tasks.size():18
+[INFO ][20171212 10:33:15,325][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,384][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,385][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,385][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000019
+[INFO ][20171212 10:33:15,385][PollingQueue:67] ===>bank order No  66662017121010000019, 上次通知时间lastNotifyTime:2017-12-12 10:33:15 325
+[INFO ][20171212 10:33:15,385][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,385][PollingTask:68] ===>notify id:52385be916df4e629064446b3ad877fe, nextNotifyTime:2017-12-12 10:36:15 325
+[INFO ][20171212 10:33:15,385][PollingPersist:67] ===>bank order 66662017121010000019 need processing again 
+[INFO ][20171212 10:33:15,385][App$1$1:90] ==>tasks.size():19
+[INFO ][20171212 10:33:15,385][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,442][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,443][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,443][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000020
+[INFO ][20171212 10:33:15,443][PollingQueue:67] ===>bank order No  66662017121010000020, 上次通知时间lastNotifyTime:2017-12-12 10:33:15 385
+[INFO ][20171212 10:33:15,443][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,443][PollingTask:68] ===>notify id:1527e618618c4d7c8c617186e2354955, nextNotifyTime:2017-12-12 10:36:15 385
+[INFO ][20171212 10:33:15,443][PollingPersist:67] ===>bank order 66662017121010000020 need processing again 
+[INFO ][20171212 10:33:15,443][App$1$1:90] ==>tasks.size():20
+[INFO ][20171212 10:33:15,443][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,498][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,499][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,499][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000021
+[INFO ][20171212 10:33:15,499][PollingQueue:67] ===>bank order No  66662017121210000021, 上次通知时间lastNotifyTime:2017-12-12 10:33:15 443
+[INFO ][20171212 10:33:15,499][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,499][PollingTask:68] ===>notify id:f817f9e91a9742c89e6741779f2baa86, nextNotifyTime:2017-12-12 10:36:15 443
+[INFO ][20171212 10:33:15,499][PollingPersist:67] ===>bank order 66662017121210000021 need processing again 
+[INFO ][20171212 10:33:15,499][App$1$1:90] ==>tasks.size():21
+[INFO ][20171212 10:33:15,499][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[WARN ][20171212 10:33:15,556][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:33:15,560][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:33:15,560][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000022
+[INFO ][20171212 10:33:15,561][PollingQueue:67] ===>bank order No  66662017121210000022, 上次通知时间lastNotifyTime:2017-12-12 10:33:15 499
+[INFO ][20171212 10:33:15,562][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 10:33:15,562][PollingTask:68] ===>notify id:cb4c167b451a4c0c8bee41da7290bd34, nextNotifyTime:2017-12-12 10:36:15 499
+[INFO ][20171212 10:33:15,562][PollingPersist:67] ===>bank order 66662017121210000022 need processing again 
+[INFO ][20171212 10:33:15,562][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:11,545][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[INFO ][20171212 10:36:11,645][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 10:36:11,645][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:11,645][App$1:83] ==>tasks.size():21
+[WARN ][20171212 10:36:11,916][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:11,917][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:11,917][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000001
+[INFO ][20171212 10:36:11,917][PollingQueue:67] ===>bank order No  66662017121010000001, 上次通知时间lastNotifyTime:2017-12-12 10:36:11 545
+[INFO ][20171212 10:36:11,917][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:11,917][PollingTask:68] ===>notify id:cbc8cb725bae4897b95909c85f2ad962, nextNotifyTime:2017-12-12 10:41:11 545
+[INFO ][20171212 10:36:11,917][PollingPersist:67] ===>bank order 66662017121010000001 need processing again 
+[INFO ][20171212 10:36:11,917][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,284][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,331][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,332][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,332][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000002
+[INFO ][20171212 10:36:13,333][PollingQueue:67] ===>bank order No  66662017121010000002, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 284
+[INFO ][20171212 10:36:13,333][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,333][PollingTask:68] ===>notify id:29e9492809fc4693b33cc54fbb65b8f1, nextNotifyTime:2017-12-12 10:41:13 284
+[INFO ][20171212 10:36:13,333][PollingPersist:67] ===>bank order 66662017121010000002 need processing again 
+[INFO ][20171212 10:36:13,333][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,384][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,384][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,385][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,385][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,433][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,435][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,435][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000003
+[INFO ][20171212 10:36:13,435][PollingQueue:67] ===>bank order No  66662017121010000003, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 385
+[INFO ][20171212 10:36:13,435][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,435][PollingTask:68] ===>notify id:2c7628f0744d4c049583daf242ed96bf, nextNotifyTime:2017-12-12 10:41:13 385
+[INFO ][20171212 10:36:13,435][PollingPersist:67] ===>bank order 66662017121010000003 need processing again 
+[INFO ][20171212 10:36:13,435][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,485][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,485][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,485][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,485][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,531][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,534][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,535][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000004
+[INFO ][20171212 10:36:13,535][PollingQueue:67] ===>bank order No  66662017121010000004, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 485
+[INFO ][20171212 10:36:13,535][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,535][PollingTask:68] ===>notify id:0116a1e49bba41a8a7bfbabf37b41903, nextNotifyTime:2017-12-12 10:41:13 485
+[INFO ][20171212 10:36:13,535][PollingPersist:67] ===>bank order 66662017121010000004 need processing again 
+[INFO ][20171212 10:36:13,535][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,588][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,588][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,588][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,588][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,634][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,635][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,635][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000005
+[INFO ][20171212 10:36:13,635][PollingQueue:67] ===>bank order No  66662017121010000005, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 588
+[INFO ][20171212 10:36:13,635][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,636][PollingTask:68] ===>notify id:d9bc006a8da24c3c81eb9bd2aa985f5d, nextNotifyTime:2017-12-12 10:41:13 588
+[INFO ][20171212 10:36:13,636][PollingPersist:67] ===>bank order 66662017121010000005 need processing again 
+[INFO ][20171212 10:36:13,636][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,697][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,698][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,699][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,701][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,753][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,754][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,755][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000006
+[INFO ][20171212 10:36:13,755][PollingQueue:67] ===>bank order No  66662017121010000006, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 701
+[INFO ][20171212 10:36:13,755][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,755][PollingTask:68] ===>notify id:38c9a5ed2771465689c624892e78b9f1, nextNotifyTime:2017-12-12 10:41:13 701
+[INFO ][20171212 10:36:13,755][PollingPersist:67] ===>bank order 66662017121010000006 need processing again 
+[INFO ][20171212 10:36:13,756][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,800][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,800][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,800][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,800][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,847][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,849][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,849][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000007
+[INFO ][20171212 10:36:13,849][PollingQueue:67] ===>bank order No  66662017121010000007, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 800
+[INFO ][20171212 10:36:13,849][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,850][PollingTask:68] ===>notify id:ceda9a70385d44fbb22d69e1d43b9118, nextNotifyTime:2017-12-12 10:41:13 800
+[INFO ][20171212 10:36:13,850][PollingPersist:67] ===>bank order 66662017121010000007 need processing again 
+[INFO ][20171212 10:36:13,850][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:13,900][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:13,900][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:13,900][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:13,900][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:13,948][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:13,949][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:13,949][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000008
+[INFO ][20171212 10:36:13,949][PollingQueue:67] ===>bank order No  66662017121010000008, 上次通知时间lastNotifyTime:2017-12-12 10:36:13 900
+[INFO ][20171212 10:36:13,949][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:13,950][PollingTask:68] ===>notify id:bfc26d4edb6640e09214a6c02708d72e, nextNotifyTime:2017-12-12 10:41:13 900
+[INFO ][20171212 10:36:13,950][PollingPersist:67] ===>bank order 66662017121010000008 need processing again 
+[INFO ][20171212 10:36:13,950][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,000][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,000][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,000][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,452][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:14,505][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:14,506][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:14,506][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000009
+[INFO ][20171212 10:36:14,507][PollingQueue:67] ===>bank order No  66662017121010000009, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 452
+[INFO ][20171212 10:36:14,507][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:14,507][PollingTask:68] ===>notify id:11c6354ed8b843b1987825a37549a754, nextNotifyTime:2017-12-12 10:41:14 452
+[INFO ][20171212 10:36:14,507][PollingPersist:67] ===>bank order 66662017121010000009 need processing again 
+[INFO ][20171212 10:36:14,507][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,552][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,552][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,552][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,552][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:14,596][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:14,598][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:14,598][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000010
+[INFO ][20171212 10:36:14,598][PollingQueue:67] ===>bank order No  66662017121010000010, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 552
+[INFO ][20171212 10:36:14,598][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:14,598][PollingTask:68] ===>notify id:f8782774cbeb447aae62309776c3fb92, nextNotifyTime:2017-12-12 10:41:14 552
+[INFO ][20171212 10:36:14,598][PollingPersist:67] ===>bank order 66662017121010000010 need processing again 
+[INFO ][20171212 10:36:14,598][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,653][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,653][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,653][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,653][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:14,700][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:14,701][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:14,701][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000011
+[INFO ][20171212 10:36:14,701][PollingQueue:67] ===>bank order No  66662017121010000011, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 653
+[INFO ][20171212 10:36:14,701][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:14,701][PollingTask:68] ===>notify id:a032dca421cb433b98a10aa15198213d, nextNotifyTime:2017-12-12 10:41:14 653
+[INFO ][20171212 10:36:14,701][PollingPersist:67] ===>bank order 66662017121010000011 need processing again 
+[INFO ][20171212 10:36:14,701][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,753][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,753][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,753][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,753][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:14,805][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:14,811][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:14,811][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000012
+[INFO ][20171212 10:36:14,811][PollingQueue:67] ===>bank order No  66662017121010000012, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 753
+[INFO ][20171212 10:36:14,811][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:14,811][PollingTask:68] ===>notify id:74b2bfde59d241fcb18c13b77100f4e4, nextNotifyTime:2017-12-12 10:41:14 753
+[INFO ][20171212 10:36:14,812][PollingPersist:67] ===>bank order 66662017121010000012 need processing again 
+[INFO ][20171212 10:36:14,812][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,855][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,855][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,855][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,855][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:14,901][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:14,902][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:14,903][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000013
+[INFO ][20171212 10:36:14,903][PollingQueue:67] ===>bank order No  66662017121010000013, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 855
+[INFO ][20171212 10:36:14,903][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:14,903][PollingTask:68] ===>notify id:75cd394515564863ad476ef407f6e0cd, nextNotifyTime:2017-12-12 10:41:14 855
+[INFO ][20171212 10:36:14,903][PollingPersist:67] ===>bank order 66662017121010000013 need processing again 
+[INFO ][20171212 10:36:14,903][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:14,955][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:14,955][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:14,955][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:14,955][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,002][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,003][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,003][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000014
+[INFO ][20171212 10:36:15,003][PollingQueue:67] ===>bank order No  66662017121010000014, 上次通知时间lastNotifyTime:2017-12-12 10:36:14 955
+[INFO ][20171212 10:36:15,003][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,003][PollingTask:68] ===>notify id:06f41b68b36d4689840e93b31f6e1d3f, nextNotifyTime:2017-12-12 10:41:14 955
+[INFO ][20171212 10:36:15,003][PollingPersist:67] ===>bank order 66662017121010000014 need processing again 
+[INFO ][20171212 10:36:15,003][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,056][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,057][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,057][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,057][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,102][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,102][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,103][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000015
+[INFO ][20171212 10:36:15,103][PollingQueue:67] ===>bank order No  66662017121010000015, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 057
+[INFO ][20171212 10:36:15,103][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,103][PollingTask:68] ===>notify id:c62416d5ffc34150a9e4ff6ef78e5d14, nextNotifyTime:2017-12-12 10:41:15 057
+[INFO ][20171212 10:36:15,103][PollingPersist:67] ===>bank order 66662017121010000015 need processing again 
+[INFO ][20171212 10:36:15,103][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,157][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,157][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,157][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,157][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,205][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,207][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,207][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000016
+[INFO ][20171212 10:36:15,207][PollingQueue:67] ===>bank order No  66662017121010000016, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 157
+[INFO ][20171212 10:36:15,207][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,208][PollingTask:68] ===>notify id:dd5a10ef3f7140cbb5d2bdb44e18c5cd, nextNotifyTime:2017-12-12 10:41:15 157
+[INFO ][20171212 10:36:15,208][PollingPersist:67] ===>bank order 66662017121010000016 need processing again 
+[INFO ][20171212 10:36:15,208][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,257][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,257][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,257][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,259][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,310][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,312][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,312][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000017
+[INFO ][20171212 10:36:15,313][PollingQueue:67] ===>bank order No  66662017121010000017, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 258
+[INFO ][20171212 10:36:15,313][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,313][PollingTask:68] ===>notify id:ec864a76cf834e3780ea40b8b5f9ae0a, nextNotifyTime:2017-12-12 10:41:15 258
+[INFO ][20171212 10:36:15,314][PollingPersist:67] ===>bank order 66662017121010000017 need processing again 
+[INFO ][20171212 10:36:15,314][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,357][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,357][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,357][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,357][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,404][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,406][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,406][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000018
+[INFO ][20171212 10:36:15,406][PollingQueue:67] ===>bank order No  66662017121010000018, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 357
+[INFO ][20171212 10:36:15,406][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,407][PollingTask:68] ===>notify id:745f62da234e40a8a5ddd3888e62f647, nextNotifyTime:2017-12-12 10:41:15 357
+[INFO ][20171212 10:36:15,407][PollingPersist:67] ===>bank order 66662017121010000018 need processing again 
+[INFO ][20171212 10:36:15,407][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,459][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,460][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,460][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,461][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,508][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,508][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,508][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000019
+[INFO ][20171212 10:36:15,509][PollingQueue:67] ===>bank order No  66662017121010000019, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 461
+[INFO ][20171212 10:36:15,509][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,509][PollingTask:68] ===>notify id:52385be916df4e629064446b3ad877fe, nextNotifyTime:2017-12-12 10:41:15 461
+[INFO ][20171212 10:36:15,509][PollingPersist:67] ===>bank order 66662017121010000019 need processing again 
+[INFO ][20171212 10:36:15,510][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,560][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,560][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,560][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,560][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,608][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,610][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,610][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121010000020
+[INFO ][20171212 10:36:15,611][PollingQueue:67] ===>bank order No  66662017121010000020, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 560
+[INFO ][20171212 10:36:15,611][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,611][PollingTask:68] ===>notify id:1527e618618c4d7c8c617186e2354955, nextNotifyTime:2017-12-12 10:41:15 560
+[INFO ][20171212 10:36:15,611][PollingPersist:67] ===>bank order 66662017121010000020 need processing again 
+[INFO ][20171212 10:36:15,612][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,660][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,660][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,660][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,660][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,705][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,707][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,707][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000021
+[INFO ][20171212 10:36:15,707][PollingQueue:67] ===>bank order No  66662017121210000021, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 660
+[INFO ][20171212 10:36:15,707][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,707][PollingTask:68] ===>notify id:f817f9e91a9742c89e6741779f2baa86, nextNotifyTime:2017-12-12 10:41:15 660
+[INFO ][20171212 10:36:15,707][PollingPersist:67] ===>bank order 66662017121210000021 need processing again 
+[INFO ][20171212 10:36:15,707][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,761][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,761][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,761][App$1:83] ==>tasks.size():22
+[INFO ][20171212 10:36:15,761][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[WARN ][20171212 10:36:15,805][HttpMethodBase:682] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+[INFO ][20171212 10:36:15,806][PollingPersist:61] order processing result:false
+[INFO ][20171212 10:36:15,806][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000022
+[INFO ][20171212 10:36:15,807][PollingQueue:67] ===>bank order No  66662017121210000022, 上次通知时间lastNotifyTime:2017-12-12 10:36:15 761
+[INFO ][20171212 10:36:15,807][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 10:36:15,807][PollingTask:68] ===>notify id:cb4c167b451a4c0c8bee41da7290bd34, nextNotifyTime:2017-12-12 10:41:15 761
+[INFO ][20171212 10:36:15,807][PollingPersist:67] ===>bank order 66662017121210000022 need processing again 
+[INFO ][20171212 10:36:15,807][App$1$1:90] ==>tasks.size():22
+[INFO ][20171212 10:36:15,861][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 10:36:15,861][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 10:36:15,861][App$1:83] ==>tasks.size():22
+[INFO ][20171212 14:12:07,285][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Tue Dec 12 14:12:07 CST 2017]; root of context hierarchy
+[INFO ][20171212 14:12:07,335][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171212 14:12:07,532][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171212 14:12:07,557][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171212 14:12:07,727][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171212 14:12:07,743][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171212 14:12:07,756][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:12:07,769][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171212 14:12:07,779][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171212 14:12:07,789][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:12:07,799][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,799][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,800][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,801][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,802][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,804][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:07,807][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:12:08,094][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171212 14:12:08,095][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171212 14:12:08,176][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13eb8acf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,aliF2FPaySubmit,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,connectionFactory,pooledConnectionFactory,targetConnectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171212 14:12:08,500][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171212 14:12:09,635][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171212 14:12:09,639][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:12:09,927][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-55628-1513059129805-1:1,clientId=null,started=false}] }
+[INFO ][20171212 14:12:09,944][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:12:09,944][App:72] ==>startThread
+[INFO ][20171212 14:12:09,945][App:55] == context start
+[INFO ][20171212 14:12:09,988][PollingMessageListener:53] == receive bankOrderNo :66662017121210000023
+[INFO ][20171212 14:12:10,046][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 14:12:10,047][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:12:10,047][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:12:10,373][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000023
+[INFO ][20171212 14:12:10,376][PollingQueue:67] ===>bank order No  66662017121210000023, 上次通知时间lastNotifyTime:2017-12-12 14:12:10 373
+[INFO ][20171212 14:12:10,379][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 14:12:10,401][PollingTask:68] ===>notify id:8fb1f4ef71204737a6a8623c203fcdeb, nextNotifyTime:2017-12-12 14:14:10 373
+[INFO ][20171212 14:13:46,697][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a8806ef: startup date [Tue Dec 12 14:13:46 CST 2017]; root of context hierarchy
+[INFO ][20171212 14:13:46,746][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171212 14:13:46,915][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171212 14:13:46,934][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171212 14:13:47,130][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171212 14:13:47,149][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171212 14:13:47,161][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:13:47,175][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171212 14:13:47,186][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171212 14:13:47,211][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:13:47,239][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,239][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,240][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,241][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,241][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,242][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,247][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:13:47,553][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171212 14:13:47,555][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171212 14:13:47,715][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e7912d8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,aliF2FPaySubmit,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,connectionFactory,pooledConnectionFactory,targetConnectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171212 14:13:48,029][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171212 14:13:49,574][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171212 14:13:49,578][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:13:49,883][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-55684-1513059229762-1:1,clientId=null,started=false}] }
+[INFO ][20171212 14:13:49,928][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:13:49,929][App:72] ==>startThread
+[INFO ][20171212 14:13:49,931][App:55] == context start
+[INFO ][20171212 14:13:50,033][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 14:13:50,034][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:13:50,034][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:15:31,282][PollingMessageListener:53] == receive bankOrderNo :66662017121210000024
+[INFO ][20171212 14:15:31,556][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000024
+[INFO ][20171212 14:15:31,560][PollingQueue:67] ===>bank order No  66662017121210000024, 上次通知时间lastNotifyTime:2017-12-12 14:15:31 556
+[INFO ][20171212 14:15:31,562][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 14:15:31,589][PollingTask:68] ===>notify id:a53c54bc1da54a52ab2b02e421b3d445, nextNotifyTime:2017-12-12 14:17:31 556
+[INFO ][20171212 14:17:31,666][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 14:17:31,669][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:17:31,669][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:18:17,343][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 14:22:04,479][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a8806ef: startup date [Tue Dec 12 14:22:04 CST 2017]; root of context hierarchy
+[INFO ][20171212 14:22:04,545][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171212 14:22:04,753][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171212 14:22:04,778][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171212 14:22:04,979][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171212 14:22:05,001][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171212 14:22:05,015][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:22:05,033][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171212 14:22:05,064][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171212 14:22:05,094][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171212 14:22:05,127][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,128][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,132][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,132][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,133][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,134][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,137][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171212 14:22:05,458][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171212 14:22:05,458][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171212 14:22:05,555][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e7912d8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,aliF2FPaySubmit,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,connectionFactory,pooledConnectionFactory,targetConnectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171212 14:22:06,002][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171212 14:22:07,438][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171212 14:22:07,442][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:22:07,755][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-55820-1513059727640-1:1,clientId=null,started=false}] }
+[INFO ][20171212 14:22:07,808][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171212 14:22:07,809][App:72] ==>startThread
+[INFO ][20171212 14:22:07,905][App:55] == context start
+[INFO ][20171212 14:22:08,007][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 14:22:08,007][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:22:08,007][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:22:14,592][PollingMessageListener:53] == receive bankOrderNo :66662017121210000025
+[INFO ][20171212 14:23:10,143][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000025
+[INFO ][20171212 14:23:10,147][PollingQueue:67] ===>bank order No  66662017121210000025, 上次通知时间lastNotifyTime:2017-12-12 14:23:10 143
+[INFO ][20171212 14:23:10,150][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 14:23:10,179][PollingTask:68] ===>notify id:acce408c2d0748e6a9cfb2c101dbfb55, nextNotifyTime:2017-12-12 14:25:10 143
+[INFO ][20171212 14:25:20,936][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 14:25:20,936][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:25:20,937][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:25:30,996][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 14:28:41,475][PollingPersist:61] order processing result:false
+[INFO ][20171212 14:28:41,476][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000025
+[INFO ][20171212 14:28:41,476][PollingQueue:67] ===>bank order No  66662017121210000025, 上次通知时间lastNotifyTime:2017-12-12 14:25:28 604
+[INFO ][20171212 14:28:41,476][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 14:28:41,481][PollingTask:68] ===>notify id:acce408c2d0748e6a9cfb2c101dbfb55, nextNotifyTime:2017-12-12 14:28:28 604
+[INFO ][20171212 14:28:41,481][PollingPersist:67] ===>bank order 66662017121210000025 need processing again 
+[INFO ][20171212 14:28:41,481][App$1$1:90] ==>tasks.size():1
+[INFO ][20171212 14:28:43,768][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 14:28:43,768][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 14:28:43,768][App$1:83] ==>tasks.size():0
+[INFO ][20171212 14:28:45,145][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[INFO ][20171212 14:29:12,834][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 14:29:23,956][PollingPersist:61] order processing result:true
+[INFO ][20171212 14:29:23,956][App$1$1:90] ==>tasks.size():0
+[INFO ][20171212 15:05:35,296][PollingMessageListener:53] == receive bankOrderNo :66662017121210000026
+[INFO ][20171212 15:05:35,296][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000026
+[INFO ][20171212 15:05:35,297][PollingQueue:67] ===>bank order No  66662017121210000026, 上次通知时间lastNotifyTime:2017-12-12 15:05:35 297
+[INFO ][20171212 15:05:35,297][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 15:05:35,298][PollingTask:68] ===>notify id:c8a65fc56766403791c560655a53b121, nextNotifyTime:2017-12-12 15:07:35 297
+[INFO ][20171212 15:07:35,301][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 15:07:35,401][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 15:07:35,401][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 15:07:35,401][App$1:83] ==>tasks.size():0
+[INFO ][20171212 15:07:40,390][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 15:07:40,402][PollingPersist:61] order processing result:true
+[INFO ][20171212 15:07:40,403][App$1$1:90] ==>tasks.size():0
+[INFO ][20171212 16:21:15,385][PollingMessageListener:53] == receive bankOrderNo :66662017121210000027
+[INFO ][20171212 16:21:15,386][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000027
+[INFO ][20171212 16:21:15,386][PollingQueue:67] ===>bank order No  66662017121210000027, 上次通知时间lastNotifyTime:2017-12-12 16:21:15 386
+[INFO ][20171212 16:21:15,386][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 16:21:15,387][PollingTask:68] ===>notify id:3c2938bec9fe4783bb48cc25898634a8, nextNotifyTime:2017-12-12 16:23:15 386
+[INFO ][20171212 16:23:15,392][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 16:23:15,492][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 16:23:15,492][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 16:23:15,492][App$1:83] ==>tasks.size():0
+[INFO ][20171212 16:23:15,784][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 16:23:15,799][PollingPersist:61] order processing result:true
+[INFO ][20171212 16:23:15,799][App$1$1:90] ==>tasks.size():0
+[INFO ][20171212 16:29:53,792][PollingMessageListener:53] == receive bankOrderNo :66662017121210000028
+[INFO ][20171212 16:29:53,793][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000028
+[INFO ][20171212 16:29:53,793][PollingQueue:67] ===>bank order No  66662017121210000028, 上次通知时间lastNotifyTime:2017-12-12 16:29:53 793
+[INFO ][20171212 16:29:53,793][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 16:29:53,793][PollingTask:68] ===>notify id:e06843f32aaa4aaabe76e495487b77ba, nextNotifyTime:2017-12-12 16:31:53 793
+[INFO ][20171212 16:31:53,797][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 16:31:53,897][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 16:31:53,897][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 16:31:53,897][App$1:83] ==>tasks.size():0
+[INFO ][20171212 16:31:54,203][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 16:31:54,217][PollingPersist:61] order processing result:true
+[INFO ][20171212 16:31:54,217][App$1$1:90] ==>tasks.size():0
+[INFO ][20171212 17:09:18,181][PollingMessageListener:53] == receive bankOrderNo :66662017121210000029
+[INFO ][20171212 17:09:18,181][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000029
+[INFO ][20171212 17:09:18,182][PollingQueue:67] ===>bank order No  66662017121210000029, 上次通知时间lastNotifyTime:2017-12-12 17:09:18 181
+[INFO ][20171212 17:09:18,182][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:09:18,182][PollingTask:68] ===>notify id:82c56b1f3d4d49cdb8590dd099338f55, nextNotifyTime:2017-12-12 17:11:18 181
+[INFO ][20171212 17:11:18,186][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 17:11:18,286][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:11:18,286][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:11:18,286][App$1:83] ==>tasks.size():0
+[ERROR][20171212 17:11:18,429][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:11:18^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=SOzRLQMQ+UpdA8A62u1W6qxTlLtjQN1OccOyQ+i+VVUSoJumh/r4rgQX4i3anU85DRNhlkoMu5A1MQ3k+7+KNeSH+hKvQYvOOynozrA35sT8WPH+bRpkSVDA+pB/53T9ok+mQSAWDTQrQqqY3R16PZr1Za+ncwFr2OPQJkN7Qu9eu/pyJAuag4lLf+D4vvo9B8Jgty6VnGDRfPqPpWx/XdHAgawQTvMCs0klNybeZTsvcXN/5rW+2tcnvU9+QBOIlOmMr5Q+ORlT1Cm87pxBYTsvtgi7rjq5ljPa2gn/q9z82EEs3wMTK8erWCgE9+ey/AWc3hOYsHf0jI7JEl0tOQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:11:18^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000029"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000029","point_amount":"0.00","receipt_amount":"0.00"},"sign":"SBhoKAP5cdpulF/YZBRwVxB46XoysByT55VYICoDlto4fcKZP4dzK2dd3kUILum5QEcZcfUcG7N9LdIoTFcr0SU5Gt1FeXtMQVM3/dd4G0+yIj1FIL9Arnd+llGZkFKIaS1nRIY37nfvf143sx50gyDZoW27Fdb30PuYKCEfYZP37GCFh4s1k5KjCoPxYc/mM4VgPdfvFmGLQ300nH/BrPBB0VD8eznZQ0P16GK/jt3sKJbkEdKJK558YvJu0+9Xu1V0vj30QK8aJWj9+nXZu+4hseBz6I/U4hoY6OorO3+ExMcYMfdZxkOicpFLOdxcFJrA0/G11k5qHTPQLgMj8g=="}
+[INFO ][20171212 17:11:18,430][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:11:18,431][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000029
+[INFO ][20171212 17:11:18,432][PollingQueue:67] ===>bank order No  66662017121210000029, 上次通知时间lastNotifyTime:2017-12-12 17:11:18 186
+[INFO ][20171212 17:11:18,432][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:11:18,433][PollingTask:68] ===>notify id:82c56b1f3d4d49cdb8590dd099338f55, nextNotifyTime:2017-12-12 17:14:18 186
+[INFO ][20171212 17:11:18,434][PollingPersist:67] ===>bank order 66662017121210000029 need processing again 
+[INFO ][20171212 17:11:18,435][App$1$1:90] ==>tasks.size():1
+[INFO ][20171212 17:14:18,192][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[INFO ][20171212 17:14:18,292][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:14:18,292][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:14:18,293][App$1:83] ==>tasks.size():0
+[ERROR][20171212 17:14:18,396][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:14:18^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=A9yW64EQCCMvn65vehuWAU8kYhFOhyZdzlUiIV8wScRj8tgEwd05hYivdOwiaXcD1fODbqKmowrNRzqCmEAvJ5gF4oYqpZU6pkgd1ErhwsYhjghT2ZqsUEwSaUJLjri1W4Adq7baHRisW8XKfmOiXJinIi7YS56ehzMhQWTn24fuvvpZOvg7Uc4exPfHpXP/T48C1+YeDLI5NYYPqhEDn98ELdxJ+8OtE4VsMd4Ki6gU2A7s+xRr4rmqsX3vteKl4alagW9OEePiuCMuhGyPyJzRTls8DaYFFcF82eKd0WRkjKiIWw67I31tZRwx8soZDcKC51OowpwYnlCymxekIQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:14:18^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000029"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000029","point_amount":"0.00","receipt_amount":"0.00"},"sign":"SBhoKAP5cdpulF/YZBRwVxB46XoysByT55VYICoDlto4fcKZP4dzK2dd3kUILum5QEcZcfUcG7N9LdIoTFcr0SU5Gt1FeXtMQVM3/dd4G0+yIj1FIL9Arnd+llGZkFKIaS1nRIY37nfvf143sx50gyDZoW27Fdb30PuYKCEfYZP37GCFh4s1k5KjCoPxYc/mM4VgPdfvFmGLQ300nH/BrPBB0VD8eznZQ0P16GK/jt3sKJbkEdKJK558YvJu0+9Xu1V0vj30QK8aJWj9+nXZu+4hseBz6I/U4hoY6OorO3+ExMcYMfdZxkOicpFLOdxcFJrA0/G11k5qHTPQLgMj8g=="}
+[INFO ][20171212 17:14:18,397][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:14:18,397][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000029
+[INFO ][20171212 17:14:18,397][PollingQueue:67] ===>bank order No  66662017121210000029, 上次通知时间lastNotifyTime:2017-12-12 17:14:18 192
+[INFO ][20171212 17:14:18,397][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:14:18,397][PollingTask:68] ===>notify id:82c56b1f3d4d49cdb8590dd099338f55, nextNotifyTime:2017-12-12 17:19:18 192
+[INFO ][20171212 17:14:18,397][PollingPersist:67] ===>bank order 66662017121210000029 need processing again 
+[INFO ][20171212 17:14:18,397][App$1$1:90] ==>tasks.size():1
+[INFO ][20171212 17:15:00,747][PollingMessageListener:53] == receive bankOrderNo :66662017121210000030
+[INFO ][20171212 17:15:00,747][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000030
+[INFO ][20171212 17:15:00,748][PollingQueue:67] ===>bank order No  66662017121210000030, 上次通知时间lastNotifyTime:2017-12-12 17:15:00 748
+[INFO ][20171212 17:15:00,748][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:00,748][PollingTask:68] ===>notify id:88ac3361f1654b58bf84a54eb0d74f77, nextNotifyTime:2017-12-12 17:17:00 748
+[INFO ][20171212 17:15:01,388][PollingMessageListener:53] == receive bankOrderNo :66662017121210000031
+[INFO ][20171212 17:15:01,389][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000031
+[INFO ][20171212 17:15:01,390][PollingQueue:67] ===>bank order No  66662017121210000031, 上次通知时间lastNotifyTime:2017-12-12 17:15:01 389
+[INFO ][20171212 17:15:01,390][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:01,391][PollingTask:68] ===>notify id:eecdc9518f014588b0eff955dfbc0646, nextNotifyTime:2017-12-12 17:17:01 389
+[INFO ][20171212 17:15:01,560][PollingMessageListener:53] == receive bankOrderNo :66662017121210000032
+[INFO ][20171212 17:15:01,560][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000032
+[INFO ][20171212 17:15:01,560][PollingQueue:67] ===>bank order No  66662017121210000032, 上次通知时间lastNotifyTime:2017-12-12 17:15:01 560
+[INFO ][20171212 17:15:01,561][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:01,561][PollingTask:68] ===>notify id:2ad21ffe0e944a32b115c3abfbfc7f39, nextNotifyTime:2017-12-12 17:17:01 560
+[INFO ][20171212 17:15:01,734][PollingMessageListener:53] == receive bankOrderNo :66662017121210000033
+[INFO ][20171212 17:15:01,734][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000033
+[INFO ][20171212 17:15:01,735][PollingQueue:67] ===>bank order No  66662017121210000033, 上次通知时间lastNotifyTime:2017-12-12 17:15:01 735
+[INFO ][20171212 17:15:01,735][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:01,735][PollingTask:68] ===>notify id:be74b05ce1dd4c1b9232a25e86f83300, nextNotifyTime:2017-12-12 17:17:01 735
+[INFO ][20171212 17:15:01,927][PollingMessageListener:53] == receive bankOrderNo :66662017121210000034
+[INFO ][20171212 17:15:01,928][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000034
+[INFO ][20171212 17:15:01,928][PollingQueue:67] ===>bank order No  66662017121210000034, 上次通知时间lastNotifyTime:2017-12-12 17:15:01 928
+[INFO ][20171212 17:15:01,928][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:01,928][PollingTask:68] ===>notify id:b8ac7ca65bac4afab30375b9b0f8c0fc, nextNotifyTime:2017-12-12 17:17:01 928
+[INFO ][20171212 17:15:13,175][PollingMessageListener:53] == receive bankOrderNo :66662017121210000035
+[INFO ][20171212 17:15:13,175][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000035
+[INFO ][20171212 17:15:13,176][PollingQueue:67] ===>bank order No  66662017121210000035, 上次通知时间lastNotifyTime:2017-12-12 17:15:13 176
+[INFO ][20171212 17:15:13,176][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:15:13,176][PollingTask:68] ===>notify id:56bc5ce19576499cbbdcaf0edb75d2e7, nextNotifyTime:2017-12-12 17:17:13 176
+[INFO ][20171212 17:17:00,753][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 17:17:00,853][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:17:00,853][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:00,853][App$1:83] ==>tasks.size():6
+[ERROR][20171212 17:17:01,012][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=bcLb4n9R96tLsDjrfm+ZjNcNq5MeM9LX0Vn3zWbOIqnpbZa/D0UqtemWJFGf/nUQIHdUCnzPjj+waExfm484v6gssZT0Cl1x3rctjZQEUatxELP7l7PY7XHH+I2W17QPEzCjr2Qc7rxK57lpoUTewZFOWSK/uTB9KjMMWg5eV6nMoG47MZn16ulTcFAjG+mpJ9p7lH0DjzeoC6ZbJcwvGOal5GKrMRjrqWJV5Dd4iNuvLsT3q1NU10h5AW/coZnmi0mDc/GxEdUSaXorXkSeIZ7uoW9AaJCtOJanBFbxOKnD9+7TrhqQsAPpzX4zT7I0x1rjwLxW6sdsFoXiK5/YnQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000030"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000030","point_amount":"0.00","receipt_amount":"0.00"},"sign":"RfdAVDPm1uL+iPCie8DcRjs+f9BaBhGMy9CBr6Vq1L1QLi04ZOxhgXnQ2/tXz4k8vMpMwiFFsIQVzgsImivMm8un1qjFodKC8yr5GL+zmM9l/YLUMMd5zNbFLJ5LG1IktwZsxDyUXTGmfffiz4jDqU8/WiUovh89D3yiDBVLpRC68ximwtcTSHHZlWXEHDfT8JyFP49+EqRsUDC+1wT6BDViqKrBfzFgDjyCsXJrhnCSmRju04Hp+CdgFOT2KWgOksWMYQw741pn3jCYasIdZ1MiuLUv4uDS533VfNXcOVvxBCIXOLSKY2QCAk3SAykTjFqv191WS1pxBRYzsMX0Ew=="}
+[INFO ][20171212 17:17:01,013][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:01,013][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000030
+[INFO ][20171212 17:17:01,013][PollingQueue:67] ===>bank order No  66662017121210000030, 上次通知时间lastNotifyTime:2017-12-12 17:17:00 753
+[INFO ][20171212 17:17:01,013][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:01,013][PollingTask:68] ===>notify id:88ac3361f1654b58bf84a54eb0d74f77, nextNotifyTime:2017-12-12 17:20:00 753
+[INFO ][20171212 17:17:01,013][PollingPersist:67] ===>bank order 66662017121210000030 need processing again 
+[INFO ][20171212 17:17:01,014][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:17:01,390][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[ERROR][20171212 17:17:01,486][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ojAG7eze5H/sZs898x08/Zr1Gp/4o24hSHbt4iQf5B6tiqJx26dSCypC7hZ6wRSZR3hac6Cw9AwMegYYcRyoj3H7NqIpdYeNotBBDyPtS17d2tilu0mp+zEq17dAQEkpRvqGSwDUpLU9RcEpIRgcdJXsfu6NBsWUdcMCffv/ZODeZpEFyJE7LqBA2a/iTz7q/d4IwI644cJlPUt9qsHX66iy3zeM9uz7N620eQJOqf/TyfjJPWWhUIeeOqAtT387SWENyhm3waw2/QKOt1KhcnN9+S/m69m8tbzOD/RfWwitW6A0e0bK+fpmgP6outdGjuS3rJHhMBxGfEadKRRDMA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000031"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000031","point_amount":"0.00","receipt_amount":"0.00"},"sign":"arOxUDKu2Ig0wCDOgLTKWtdIi6Uw7xEbYenwm8T5XvzjhqWXBxOfQGPGGgwpS8lrMRnF4gmYMUASgapmBq3H12vscDuVF5nQ5mZylzDzClB54SY8FfyImm+Qqy9ogZK7UJLLJn80vbkOruUmYLOQTLYOFuHPYa90WGJI0+M+HtzogCxXy83rY4UO25YIrIZCkfpHooKG0PBUM46KI9b9EvifH4QUdPGsaWCqpi5s9rhkOqJ8mearS5hvc5g/OFY0Q2V+/pHm1lWNaH0d9w4+38+gvJo0tHZm5zi98aX0DQZHJmA4bSAcvFySIVsl4xg5wBL9d9ZDI3q092OjMF7Vkw=="}
+[INFO ][20171212 17:17:01,486][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:01,486][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000031
+[INFO ][20171212 17:17:01,487][PollingQueue:67] ===>bank order No  66662017121210000031, 上次通知时间lastNotifyTime:2017-12-12 17:17:01 390
+[INFO ][20171212 17:17:01,487][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:01,487][PollingTask:68] ===>notify id:eecdc9518f014588b0eff955dfbc0646, nextNotifyTime:2017-12-12 17:20:01 390
+[INFO ][20171212 17:17:01,487][PollingPersist:67] ===>bank order 66662017121210000031 need processing again 
+[INFO ][20171212 17:17:01,487][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:17:01,497][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:17:01,498][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:01,498][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:17:01,561][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[ERROR][20171212 17:17:01,629][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=nn8EvGfLYQUln4CCLh4xyoO9UDT4WgLbZIGDTzf8cAPCZ2PDWBI+tK5U3pd4EBgqPwdrLWRZj8Obbf+Vs1wTcW7mt0hWGIhXzIPARm6/6GYdAP389/khUsghEXeRg3pSkJs0iKHcpZMmS6aHETPzDd7LDYitxPEP2kVfTzNb2nfN8uDYHOgxxQzL5+ZdOeDSd/9656GlyhTVWh4DMO9HREA5lMkQg3mqv9IhqGuyqx1oiSSL78AdRCSPicOlDCZVfI/4IaC3B7iuZ0bY7s3BEhRRgZiH/+NVLb/Is6rTIezYndsz64SBbGaCXSZwTpNCYO04o5OiXSQTriMdNY9DrA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000032"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000032","point_amount":"0.00","receipt_amount":"0.00"},"sign":"qtLgpZLa82YRvQEaXNYpsQBcG0b9vqUqXcUShsSr0Si+BVmerpk91mTPtGFweoTvFDdQxdfvFDidrDMpSxQFlcgmhPM0sQbBrj7D+YAoei8His43vw+ircGdIC3j4Mue2UpRYUdDSBrghHNzUnRVF3SMhGDJxLVDQwPG6BGy/ee/MDoYkCiMwDx9tybD7BsmPqOA3LIhQpnEGrcpaSQevp+8s2hA2hnnTwWB8lsDIkAyUxVg7KVlQ+10QQjKG+VC1sZ8RRvWSggtiBS2mYp0gJeH99eu/ro9aSPBYDg4Mx6IVE2AsGrJojE0ttwbW6oiB6143z+Cx1jAcbA0rp+oAw=="}
+[INFO ][20171212 17:17:01,629][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:01,629][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000032
+[INFO ][20171212 17:17:01,632][PollingQueue:67] ===>bank order No  66662017121210000032, 上次通知时间lastNotifyTime:2017-12-12 17:17:01 561
+[INFO ][20171212 17:17:01,632][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:01,632][PollingTask:68] ===>notify id:2ad21ffe0e944a32b115c3abfbfc7f39, nextNotifyTime:2017-12-12 17:20:01 561
+[INFO ][20171212 17:17:01,632][PollingPersist:67] ===>bank order 66662017121210000032 need processing again 
+[INFO ][20171212 17:17:01,635][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:17:01,661][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:17:01,661][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:01,661][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:17:01,736][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[ERROR][20171212 17:17:01,808][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=hHhTqKhTKzu50Ks/cbfWvsbdxVSOHyxIG9behpf1MANrJ4XfE//y/O8yDjc84mOSTuLYFiyZ6Vz17oCAvkt6aWAUEtZraNlUTbWu75LF/mbkQMa3LdZxvztysJdEJuT3VzfCSoSwBYZsQJFLLRCK0QOz69rOhIQnS+JypGNHPAUJfKdCv+aojmQ88NB8XUylUmqIdcsPh8AExj0C+DM5P85jC5EFO4ZIk3x9iUZNUmQWwQt+qO4jdxjemdpmB6VRATkLZuF6vl9SVwcw6R7dIqwQCXrgeeQpVpIQJSyLVzObgC0aV9Z6U8nngV9nhE4RhzOJSiukAZavLRd8aS5/ew==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000033"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000033","point_amount":"0.00","receipt_amount":"0.00"},"sign":"UvX4yCH1VcNqr9wIa2Np7xIE4j8aRSutFLSTRo+jlieOXhPkadBTYTpDlwLuz9sdyS6pfYDmOx5JgHUQrjRrdmirB+yGNuCf7nH+8zz9jaVJ1WtxF706f+6MTBpS88P1fVOTvsWLoYkoPwnWnx9i/rSigcsV8fVzysUrJnh0IIlZsEk64t64dTlWolxUXFwqxeuEOFYKadZmCIQypDu7iSkNSW6Apei/DPnAlxMD5LpZIcOSCv1tOnkUlqFNqbZDHAovLJ2A9gLmygfIGfZ2AGmgacpj8N6aPWKDIlVAmNjRQ9c3Eja7p8MPxFxoE/6fu95a66hAn6kzje/dAQivdg=="}
+[INFO ][20171212 17:17:01,808][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:01,808][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000033
+[INFO ][20171212 17:17:01,808][PollingQueue:67] ===>bank order No  66662017121210000033, 上次通知时间lastNotifyTime:2017-12-12 17:17:01 736
+[INFO ][20171212 17:17:01,808][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:01,810][PollingTask:68] ===>notify id:be74b05ce1dd4c1b9232a25e86f83300, nextNotifyTime:2017-12-12 17:20:01 736
+[INFO ][20171212 17:17:01,810][PollingPersist:67] ===>bank order 66662017121210000033 need processing again 
+[INFO ][20171212 17:17:01,810][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:17:01,836][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:17:01,836][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:01,836][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:17:01,929][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[ERROR][20171212 17:17:01,997][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=dhxuUO4eJ2eGiDWEg+px66ETC5LUWodHsZN2oUvgjX8xNVO5banKrSsA6Zw7R6QfMqfFkEfOniVC6j89ecgk4sKgrDR21csHPlhl2dXvQevElFZl3jGGugz+S5hjNyq8ZMZBkLjflo2+VbEcSRP83AbXYbWdgsyQFqVNddKFJqLQVD1JgXvD18jzmUtWYCzce/iB9yik53t9VvqD04kFQDz3EY+XOFJNo6ojYJTEWV01xUBkNyMboY/JxuGJEdAz7wRu3lXacMYnR2u4+Up3UH4UaiEEfRV0PDzHI1B33HKhJ/diIdYhP/TdAW22/TBiiYJ/hD8TFjbXn7A5EYKdKg==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000034"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000034","point_amount":"0.00","receipt_amount":"0.00"},"sign":"V6mU/GFRc2dWLUNeH0I1zGAwHmHXVPBLNkpmgRj7xz0d3n+ghl3GQOxnq189GHnwA34Hj/IXa7a8kwQJxTSiviOQmCCgtxwfMkhIEOUHdmD+ZEnWK1QcYhXGN6oWl9UExr/7waZHajBZfTGer9jZsFG0woiNoJS3jy2p449b6FE6/Lp0JB/DNqq93RPMwPWomchgwqBmfdSq/Ukg6n8VZ9r76kQwdrvYXKg1mY2T6mAuzYWgHdRvnj218abrmZMJu0ln96G1ZGixeYYfUoh63Q03QmmH69I2e6f5hIvi1S49TRKYT758lAEw+EITyPdGJ+KcmwmwsNn8imCKyJE0gw=="}
+[INFO ][20171212 17:17:01,997][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:01,997][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000034
+[INFO ][20171212 17:17:01,998][PollingQueue:67] ===>bank order No  66662017121210000034, 上次通知时间lastNotifyTime:2017-12-12 17:17:01 929
+[INFO ][20171212 17:17:01,998][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:01,998][PollingTask:68] ===>notify id:b8ac7ca65bac4afab30375b9b0f8c0fc, nextNotifyTime:2017-12-12 17:20:01 929
+[INFO ][20171212 17:17:01,998][PollingPersist:67] ===>bank order 66662017121210000034 need processing again 
+[INFO ][20171212 17:17:01,998][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:17:02,029][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:17:02,029][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:02,029][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:17:13,177][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 17:17:13,277][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:17:13,278][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:17:13,278][App$1:83] ==>tasks.size():6
+[ERROR][20171212 17:17:14,554][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:17:14^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=APO65IK9S0g/ceA7xbuV63Wj/BBjuqyyaPLoBRtzIiMeWHXACOt/lZ0Ju3kndS0y2hegikX9tq6gUEwEXO4nABh7T5k1vPt/LoSKnn7o6u7VqMmRCtwxphZ9FKhThqULlOpE7zIgE3wV/WN6lOP49MaaJbWH3/Ynt5C08wdIv22W3Knrl1lF0dZsI9dsQur7M559HzD19Za6VXvR8IXr31erNXy+yKk0rhLmucIQM8JpbT9teJ/3ExvjMbyx/q4zHXvADRGLOzpPPp/jLqDzffhXSmJXV72QFVYguyHzO/Bvbt+cq81vHdcUaEczNYRTSZCrR05BH+l/rtLhJaK+jw==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:17:13^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000035"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000035","point_amount":"0.00","receipt_amount":"0.00"},"sign":"GFcd570gWYSrAhpzUKMIP2M6UVAf5biEhCcj4XNODp9sSICYVGu5zFoH3JWoVjAlleDM0xAJm+4MSHOMmzqXtWuDIkCbOAH+k8nN7ybC3q0eKHaiLrLhcQqgUqjlWeOeLueSDnrZT46DTEEJuGw8Eg4+KoETlpAAJeiGdv8lNlHvxyz9AJ7zSZN1srUjlaII5gPXApDl3AzPXr71izRoSIZJt80vwuxkGMC6ijclXmFem8BDOmxJOg4ZPdyGRVkGi8uCpR5Q67nUFSkMKEs5Z6TcSR4ODJp5Oq7McMmNVRIKx8l+mlpx+DAS0RrELWzvRnsouwDp4628jkefeuIzIg=="}
+[INFO ][20171212 17:17:14,554][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:17:14,554][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000035
+[INFO ][20171212 17:17:14,554][PollingQueue:67] ===>bank order No  66662017121210000035, 上次通知时间lastNotifyTime:2017-12-12 17:17:13 177
+[INFO ][20171212 17:17:14,555][PollingTask:64] ===>pollingTimes:1
+[INFO ][20171212 17:17:14,555][PollingTask:68] ===>notify id:56bc5ce19576499cbbdcaf0edb75d2e7, nextNotifyTime:2017-12-12 17:20:13 177
+[INFO ][20171212 17:17:14,555][PollingPersist:67] ===>bank order 66662017121210000035 need processing again 
+[INFO ][20171212 17:17:14,555][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:19:01,234][PollingMessageListener:53] == receive bankOrderNo :66662017121210000036
+[INFO ][20171212 17:19:01,235][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000036
+[INFO ][20171212 17:19:01,235][PollingQueue:67] ===>bank order No  66662017121210000036, 上次通知时间lastNotifyTime:2017-12-12 17:19:01 235
+[INFO ][20171212 17:19:01,235][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:19:01,235][PollingTask:68] ===>notify id:11faebdff0334d4187c053db330fa920, nextNotifyTime:2017-12-12 17:21:01 235
+[INFO ][20171212 17:19:18,196][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[INFO ][20171212 17:19:18,296][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:19:18,296][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:19:18,296][App$1:83] ==>tasks.size():7
+[ERROR][20171212 17:19:18,425][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:19:18^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=PKkZHHNluhaP7YyrR70102Z0GKDMskmbGrLlfAEayqUttVp1TbhyPSXENE4FMryzTiI9XsT6YG10b9ZuBzNH2LR+MsmrRr2vic8kwFV5RDEmE8EFpnEndzFwSqT2/T5fnjY6gMPXSmoHnJ5+GthI2okOUQW0BrtAG6NZHFnGddnvUkJeae2reGo8yXqjp4L0L5v93zMNLjxrik9w+xDYuyLI8BoGDi4FLpBTRuEjX+pnrqh8mTStO0FTxWLtDUfigEhHgRl8iYl7jQ2zVwEiJP5v92f2ukXeEE9h2pT2ruu1LlU1z8mB8u9jZP88g1KjpFa33A9WUOxt3PAjZMWhpw==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:19:18^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000029"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000029","point_amount":"0.00","receipt_amount":"0.00"},"sign":"SBhoKAP5cdpulF/YZBRwVxB46XoysByT55VYICoDlto4fcKZP4dzK2dd3kUILum5QEcZcfUcG7N9LdIoTFcr0SU5Gt1FeXtMQVM3/dd4G0+yIj1FIL9Arnd+llGZkFKIaS1nRIY37nfvf143sx50gyDZoW27Fdb30PuYKCEfYZP37GCFh4s1k5KjCoPxYc/mM4VgPdfvFmGLQ300nH/BrPBB0VD8eznZQ0P16GK/jt3sKJbkEdKJK558YvJu0+9Xu1V0vj30QK8aJWj9+nXZu+4hseBz6I/U4hoY6OorO3+ExMcYMfdZxkOicpFLOdxcFJrA0/G11k5qHTPQLgMj8g=="}
+[INFO ][20171212 17:19:18,426][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:19:18,426][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000029
+[INFO ][20171212 17:19:18,426][PollingQueue:67] ===>bank order No  66662017121210000029, 上次通知时间lastNotifyTime:2017-12-12 17:19:18 196
+[INFO ][20171212 17:19:18,427][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:19:18,427][PollingTask:68] ===>notify id:82c56b1f3d4d49cdb8590dd099338f55, nextNotifyTime:2017-12-12 17:29:18 196
+[INFO ][20171212 17:19:18,427][PollingPersist:67] ===>bank order 66662017121210000029 need processing again 
+[INFO ][20171212 17:19:18,428][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:00,755][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[INFO ][20171212 17:20:00,855][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:20:00,855][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:00,855][App$1:83] ==>tasks.size():7
+[ERROR][20171212 17:20:00,988][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:00^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=A+1wdfsTaJB42N5M7KhqU85ELiSYmSyGpTG/4seCUFAitwA9r3d17lI9UqmqcsVLbvyNmn+lZkef6ltU91hA/QaAjEa2Okhdu4BQ/clKmeEfNXIb3Ic5ejXLLtVpyI4l5Fbm+DX+ogYYtoPVIA9aYh0noeayg5VpQYY8lLyjYlIZjzQfpdfpkxr6RMS38zdVJ85eGWxyjKcDoOhukvIe9jGAP1vYiCbmETUAjaj16UiE4zYrCHWQmwJoB3ZYhbZo+jhPCWOf0nydtelGgG+cLUjPD/FpmqWE7eDJhH7ClSLD5ebu6JVvh9fxNEprcdgVBBg/Ftr4FsticpFYwXRo1w==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000030"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000030","point_amount":"0.00","receipt_amount":"0.00"},"sign":"RfdAVDPm1uL+iPCie8DcRjs+f9BaBhGMy9CBr6Vq1L1QLi04ZOxhgXnQ2/tXz4k8vMpMwiFFsIQVzgsImivMm8un1qjFodKC8yr5GL+zmM9l/YLUMMd5zNbFLJ5LG1IktwZsxDyUXTGmfffiz4jDqU8/WiUovh89D3yiDBVLpRC68ximwtcTSHHZlWXEHDfT8JyFP49+EqRsUDC+1wT6BDViqKrBfzFgDjyCsXJrhnCSmRju04Hp+CdgFOT2KWgOksWMYQw741pn3jCYasIdZ1MiuLUv4uDS533VfNXcOVvxBCIXOLSKY2QCAk3SAykTjFqv191WS1pxBRYzsMX0Ew=="}
+[INFO ][20171212 17:20:00,988][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:00,988][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000030
+[INFO ][20171212 17:20:00,988][PollingQueue:67] ===>bank order No  66662017121210000030, 上次通知时间lastNotifyTime:2017-12-12 17:20:00 755
+[INFO ][20171212 17:20:00,988][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:00,989][PollingTask:68] ===>notify id:88ac3361f1654b58bf84a54eb0d74f77, nextNotifyTime:2017-12-12 17:25:00 755
+[INFO ][20171212 17:20:00,989][PollingPersist:67] ===>bank order 66662017121210000030 need processing again 
+[INFO ][20171212 17:20:00,989][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:01,391][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[ERROR][20171212 17:20:01,458][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=o+GtxqTeYjCd4Y1ctxEC6HgUEs/O5e2N5+/s+cLjsBIJkQ6DqT2KHsuDoFasfLuLSLkVDoIU+8ngl9nRkojpc/G0euXu4tt3/3pmish4qqELfQfyzascElVxQUrCfoZqz4Gy0pdMIqHAVkV7pvH97qEaQkx5Xfh6lhIeHiRSmuJw3g2oYQq+VcjiY6Pq1wLC0WRinNydxcR7PUrujB7WQlqeGZmT/fIxrLtpTTDY7iwGfU1JuiP2GZ0cAi+qL8vLLAvafIO9zMeTiN3QmAv4oq5k/76HXDM0i8lP4zAAbNTKamT66rMzuKhuBW0H0hUWKNyUhoN5SzhLwhqoa8+Hkg==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000031"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000031","point_amount":"0.00","receipt_amount":"0.00"},"sign":"arOxUDKu2Ig0wCDOgLTKWtdIi6Uw7xEbYenwm8T5XvzjhqWXBxOfQGPGGgwpS8lrMRnF4gmYMUASgapmBq3H12vscDuVF5nQ5mZylzDzClB54SY8FfyImm+Qqy9ogZK7UJLLJn80vbkOruUmYLOQTLYOFuHPYa90WGJI0+M+HtzogCxXy83rY4UO25YIrIZCkfpHooKG0PBUM46KI9b9EvifH4QUdPGsaWCqpi5s9rhkOqJ8mearS5hvc5g/OFY0Q2V+/pHm1lWNaH0d9w4+38+gvJo0tHZm5zi98aX0DQZHJmA4bSAcvFySIVsl4xg5wBL9d9ZDI3q092OjMF7Vkw=="}
+[INFO ][20171212 17:20:01,459][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:01,459][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000031
+[INFO ][20171212 17:20:01,459][PollingQueue:67] ===>bank order No  66662017121210000031, 上次通知时间lastNotifyTime:2017-12-12 17:20:01 391
+[INFO ][20171212 17:20:01,459][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:01,459][PollingTask:68] ===>notify id:eecdc9518f014588b0eff955dfbc0646, nextNotifyTime:2017-12-12 17:25:01 391
+[INFO ][20171212 17:20:01,459][PollingPersist:67] ===>bank order 66662017121210000031 need processing again 
+[INFO ][20171212 17:20:01,460][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:01,491][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:20:01,491][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:01,491][App$1:83] ==>tasks.size():8
+[INFO ][20171212 17:20:01,562][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[ERROR][20171212 17:20:01,648][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=VgtJyavDl0tHJSf//q/P/IhsOCTOkbuNH8G1w600wjyRW0lTtRFSnOcwl8kgxrf93HQwQvHi8Az00IW1ONR9elMBimiTw7E/qtoWK1FSWN6soB21D5u/mgvZLACmYoLUEKPZClBRun3bNvKEZ0QADwnBg5YkNCyRvfZ0dguyp2Oqgm3bjLWymBpYgZuQznLTDL8JV4lZGCCjMwo/gBeNOepWbQSE67Ln5V4v7WSUskUiX9E1fZny6Zc2Ze/2eBl/rFTi8Ycx7AMGmm0KEBHEpttKX4Y9kX2Oimf9IZcgetZxYyo60JK5YlYPYCa0i6usw/ryTDKNj9HkrbRZfhuF5Q==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000032"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000032","point_amount":"0.00","receipt_amount":"0.00"},"sign":"qtLgpZLa82YRvQEaXNYpsQBcG0b9vqUqXcUShsSr0Si+BVmerpk91mTPtGFweoTvFDdQxdfvFDidrDMpSxQFlcgmhPM0sQbBrj7D+YAoei8His43vw+ircGdIC3j4Mue2UpRYUdDSBrghHNzUnRVF3SMhGDJxLVDQwPG6BGy/ee/MDoYkCiMwDx9tybD7BsmPqOA3LIhQpnEGrcpaSQevp+8s2hA2hnnTwWB8lsDIkAyUxVg7KVlQ+10QQjKG+VC1sZ8RRvWSggtiBS2mYp0gJeH99eu/ro9aSPBYDg4Mx6IVE2AsGrJojE0ttwbW6oiB6143z+Cx1jAcbA0rp+oAw=="}
+[INFO ][20171212 17:20:01,648][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:01,648][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000032
+[INFO ][20171212 17:20:01,649][PollingQueue:67] ===>bank order No  66662017121210000032, 上次通知时间lastNotifyTime:2017-12-12 17:20:01 562
+[INFO ][20171212 17:20:01,649][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:01,649][PollingTask:68] ===>notify id:2ad21ffe0e944a32b115c3abfbfc7f39, nextNotifyTime:2017-12-12 17:25:01 562
+[INFO ][20171212 17:20:01,649][PollingPersist:67] ===>bank order 66662017121210000032 need processing again 
+[INFO ][20171212 17:20:01,649][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:01,662][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:20:01,662][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:01,664][App$1:83] ==>tasks.size():8
+[INFO ][20171212 17:20:01,737][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[ERROR][20171212 17:20:01,798][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=lruvMV5rZmCbGpyOhxMXL802BS2snnnxPxRIJx1gFjXxGwKGjK2c3JNXf3kJAO324075l3rD535BJvmSM7yfJBddWexIwWHbs1vaRc+YfW4nG3hp87Y6q8FBrhj/Eyv8oRcfAzEPGUnFxH8Z8q12ZcE5HPuTJ2faIpmcU/x+P43uQyCc87xrGXEweCfOP8RchRZZt2aaMONeSZIJopqMcfQ2eHLNAQzc7sLmBCPTUDRErC/u0Jn5C/r3P3wnA7swq/0iEJdloZGHHUswHdebB6vTNhPpKwEUIVqh6XZDjeGAG8CrTt0sVmMnPVOR/uXOm02Hct+KliZJSxiWUtH0rA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000033"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000033","point_amount":"0.00","receipt_amount":"0.00"},"sign":"UvX4yCH1VcNqr9wIa2Np7xIE4j8aRSutFLSTRo+jlieOXhPkadBTYTpDlwLuz9sdyS6pfYDmOx5JgHUQrjRrdmirB+yGNuCf7nH+8zz9jaVJ1WtxF706f+6MTBpS88P1fVOTvsWLoYkoPwnWnx9i/rSigcsV8fVzysUrJnh0IIlZsEk64t64dTlWolxUXFwqxeuEOFYKadZmCIQypDu7iSkNSW6Apei/DPnAlxMD5LpZIcOSCv1tOnkUlqFNqbZDHAovLJ2A9gLmygfIGfZ2AGmgacpj8N6aPWKDIlVAmNjRQ9c3Eja7p8MPxFxoE/6fu95a66hAn6kzje/dAQivdg=="}
+[INFO ][20171212 17:20:01,798][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:01,798][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000033
+[INFO ][20171212 17:20:01,798][PollingQueue:67] ===>bank order No  66662017121210000033, 上次通知时间lastNotifyTime:2017-12-12 17:20:01 737
+[INFO ][20171212 17:20:01,798][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:01,799][PollingTask:68] ===>notify id:be74b05ce1dd4c1b9232a25e86f83300, nextNotifyTime:2017-12-12 17:25:01 737
+[INFO ][20171212 17:20:01,799][PollingPersist:67] ===>bank order 66662017121210000033 need processing again 
+[INFO ][20171212 17:20:01,799][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:01,837][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:20:01,838][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:01,838][App$1:83] ==>tasks.size():8
+[INFO ][20171212 17:20:01,930][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[ERROR][20171212 17:20:01,993][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=TAv6tS/arIH2fv9LOc38OI1MtRYdKQ4GwPUiHC90i5pI0Cfx3zqFthgbTe8E2w6gGxc9hCRB7tVxhSPbr1c/mMFiDNPqC4J3b8xlhJ0a9C04H+KbZau8BWi8V80Oj65kQs7wtNcOgKlHlfCXkrlACf2wImTFEcWx9W+Xvk7q23cXUwpyVbnqa2rz/0msPr+9bhQay8vvkIQjxEOfXrfoc5GPA4fiDXGwaJc8Rrphe+wqGkrHC2Yttjv2B7Z+zpyb1jl2hYCn2BEW6oWLo1ygv/Y3R6Cs/NSGzDlt2CwzZ5NOLwymh3dVHwyT7Gbzk6jjQw/4X44mI8tbHc7pvcmZiA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000034"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000034","point_amount":"0.00","receipt_amount":"0.00"},"sign":"V6mU/GFRc2dWLUNeH0I1zGAwHmHXVPBLNkpmgRj7xz0d3n+ghl3GQOxnq189GHnwA34Hj/IXa7a8kwQJxTSiviOQmCCgtxwfMkhIEOUHdmD+ZEnWK1QcYhXGN6oWl9UExr/7waZHajBZfTGer9jZsFG0woiNoJS3jy2p449b6FE6/Lp0JB/DNqq93RPMwPWomchgwqBmfdSq/Ukg6n8VZ9r76kQwdrvYXKg1mY2T6mAuzYWgHdRvnj218abrmZMJu0ln96G1ZGixeYYfUoh63Q03QmmH69I2e6f5hIvi1S49TRKYT758lAEw+EITyPdGJ+KcmwmwsNn8imCKyJE0gw=="}
+[INFO ][20171212 17:20:01,993][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:01,994][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000034
+[INFO ][20171212 17:20:01,994][PollingQueue:67] ===>bank order No  66662017121210000034, 上次通知时间lastNotifyTime:2017-12-12 17:20:01 930
+[INFO ][20171212 17:20:01,994][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:01,994][PollingTask:68] ===>notify id:b8ac7ca65bac4afab30375b9b0f8c0fc, nextNotifyTime:2017-12-12 17:25:01 930
+[INFO ][20171212 17:20:01,994][PollingPersist:67] ===>bank order 66662017121210000034 need processing again 
+[INFO ][20171212 17:20:01,994][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:20:02,030][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:20:02,030][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:02,030][App$1:83] ==>tasks.size():8
+[INFO ][20171212 17:20:13,179][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:6 
+[INFO ][20171212 17:20:13,279][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:20:13,279][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:20:13,279][App$1:83] ==>tasks.size():7
+[ERROR][20171212 17:20:13,329][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:20:13^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=pj5DgJYSOZ8Pri/i7c9Wcy6oahLL6kbaeUNIMSJJwHTiBnM997/FRv0TCVCf3hMfZAd/wdb9+7Ch51lqY8Yn8wQvHGLBkR2KDDhXfVPiRmHF3IVA/NxTUReuAQ1z8coatJTlQrZF1il1mvLizOWLCrGQ4hR4ZgcquihpKkvYH/X7IglmBhTHw1/iRk/VRrWHTenXfw5S3j4ZJD99nmCvVhu5XaOGXHqsbBdV7n0Yulc/6gY8BJc3XY5JAI1df24C+2ZU1rM4zfS4uOWZrZfyyqHfXF3PBI+5GwY2BN6AD4n5f+Qsw4vhMNWI//zN7uDJIv0H6w8vvPKZ1eTcN7uquA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:20:13^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000035"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000035","point_amount":"0.00","receipt_amount":"0.00"},"sign":"GFcd570gWYSrAhpzUKMIP2M6UVAf5biEhCcj4XNODp9sSICYVGu5zFoH3JWoVjAlleDM0xAJm+4MSHOMmzqXtWuDIkCbOAH+k8nN7ybC3q0eKHaiLrLhcQqgUqjlWeOeLueSDnrZT46DTEEJuGw8Eg4+KoETlpAAJeiGdv8lNlHvxyz9AJ7zSZN1srUjlaII5gPXApDl3AzPXr71izRoSIZJt80vwuxkGMC6ijclXmFem8BDOmxJOg4ZPdyGRVkGi8uCpR5Q67nUFSkMKEs5Z6TcSR4ODJp5Oq7McMmNVRIKx8l+mlpx+DAS0RrELWzvRnsouwDp4628jkefeuIzIg=="}
+[INFO ][20171212 17:20:13,329][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:20:13,329][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000035
+[INFO ][20171212 17:20:13,329][PollingQueue:67] ===>bank order No  66662017121210000035, 上次通知时间lastNotifyTime:2017-12-12 17:20:13 179
+[INFO ][20171212 17:20:13,329][PollingTask:64] ===>pollingTimes:2
+[INFO ][20171212 17:20:13,330][PollingTask:68] ===>notify id:56bc5ce19576499cbbdcaf0edb75d2e7, nextNotifyTime:2017-12-12 17:25:13 179
+[INFO ][20171212 17:20:13,330][PollingPersist:67] ===>bank order 66662017121210000035 need processing again 
+[INFO ][20171212 17:20:13,330][App$1$1:90] ==>tasks.size():8
+[INFO ][20171212 17:21:01,238][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 17:21:01,339][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:21:01,339][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:21:01,339][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:21:01,535][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 17:21:01,547][PollingPersist:61] order processing result:true
+[INFO ][20171212 17:21:01,547][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:21:26,229][PollingMessageListener:53] == receive bankOrderNo :66662017121210000037
+[INFO ][20171212 17:21:26,230][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000037
+[INFO ][20171212 17:21:26,230][PollingQueue:67] ===>bank order No  66662017121210000037, 上次通知时间lastNotifyTime:2017-12-12 17:21:26 230
+[INFO ][20171212 17:21:26,230][PollingTask:64] ===>pollingTimes:0
+[INFO ][20171212 17:21:26,230][PollingTask:68] ===>notify id:cff47f5ef24f4e0199aba93d8ab4c10f, nextNotifyTime:2017-12-12 17:23:26 230
+[INFO ][20171212 17:23:26,234][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:6 
+[INFO ][20171212 17:23:26,334][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:23:26,334][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:23:26,334][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:23:26,666][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171212 17:23:26,675][PollingPersist:61] order processing result:true
+[INFO ][20171212 17:23:26,676][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:00,758][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[INFO ][20171212 17:25:00,860][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:25:00,860][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:00,860][App$1:83] ==>tasks.size():6
+[ERROR][20171212 17:25:01,002][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=nYWu9nEvRhgI3jT8FWAvKAbAn9tqN9ORO6SwuDKP8vkyG+WLVNWqEwNmVZ5N88/TZOvq5gT9sLR9X2lh5OlIDA6JZtjCqEm+ujNO9jTFGvK6bjW2X/yN7b5O56jq3FOaoXnbJSVYAQjYHCjG82xTa/j7x2rREojwfjwf4w9Y5YWCO2SnQcHVBgqDohhqDmmfiq6GgMqrr78nT9hymOm52pBxVjgq33hAHEWmmf8QbMShtX3eYlJJcU44PMpH1f+CqMEqDOE6ikSlMMi10XSU6++FZJX4d/9GluFJy/JCH6mFoZe5NfRJzjUNDgLXnH836k0MShXZkmkY+CHx02bXBQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:00^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000030"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000030","point_amount":"0.00","receipt_amount":"0.00"},"sign":"RfdAVDPm1uL+iPCie8DcRjs+f9BaBhGMy9CBr6Vq1L1QLi04ZOxhgXnQ2/tXz4k8vMpMwiFFsIQVzgsImivMm8un1qjFodKC8yr5GL+zmM9l/YLUMMd5zNbFLJ5LG1IktwZsxDyUXTGmfffiz4jDqU8/WiUovh89D3yiDBVLpRC68ximwtcTSHHZlWXEHDfT8JyFP49+EqRsUDC+1wT6BDViqKrBfzFgDjyCsXJrhnCSmRju04Hp+CdgFOT2KWgOksWMYQw741pn3jCYasIdZ1MiuLUv4uDS533VfNXcOVvxBCIXOLSKY2QCAk3SAykTjFqv191WS1pxBRYzsMX0Ew=="}
+[INFO ][20171212 17:25:01,002][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:01,002][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000030
+[INFO ][20171212 17:25:01,002][PollingQueue:67] ===>bank order No  66662017121210000030, 上次通知时间lastNotifyTime:2017-12-12 17:25:00 758
+[INFO ][20171212 17:25:01,002][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:01,002][PollingTask:68] ===>notify id:88ac3361f1654b58bf84a54eb0d74f77, nextNotifyTime:2017-12-12 17:35:00 758
+[INFO ][20171212 17:25:01,002][PollingPersist:67] ===>bank order 66662017121210000030 need processing again 
+[INFO ][20171212 17:25:01,002][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:01,392][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[ERROR][20171212 17:25:01,462][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=MgU7YexMDdlptav9qPErA2vRxBctp4KzmhHF0yRLj5YTzpomSA/IFJdtz+dtc2YEl0mHuu39lyM6BSikfWc8Gu5mYEXkL9Q6bvSdhES2mIUK5yb/LHEkqCzB8yGkTRwVOR+fupswZmxbSRtSpRw4PpG2AhpEJj/QPBUWapIbvjr1jAUjnm5Ed2xypw1XZgWn+fAKFzN/fXUFYklmHWaCJg68lXKOZH7WwwsvKxD0fAVtO19JxePo0P1/riMKxht0wws+4OwGn4ERBNl9Vo1rq5S3NVzLcBf4N5i0Npddb4cj4IjZ6KbIQlBlz2dWIiEJ0vLJn7fx8soWzqMHrGDKMw==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000031"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000031","point_amount":"0.00","receipt_amount":"0.00"},"sign":"arOxUDKu2Ig0wCDOgLTKWtdIi6Uw7xEbYenwm8T5XvzjhqWXBxOfQGPGGgwpS8lrMRnF4gmYMUASgapmBq3H12vscDuVF5nQ5mZylzDzClB54SY8FfyImm+Qqy9ogZK7UJLLJn80vbkOruUmYLOQTLYOFuHPYa90WGJI0+M+HtzogCxXy83rY4UO25YIrIZCkfpHooKG0PBUM46KI9b9EvifH4QUdPGsaWCqpi5s9rhkOqJ8mearS5hvc5g/OFY0Q2V+/pHm1lWNaH0d9w4+38+gvJo0tHZm5zi98aX0DQZHJmA4bSAcvFySIVsl4xg5wBL9d9ZDI3q092OjMF7Vkw=="}
+[INFO ][20171212 17:25:01,462][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:01,463][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000031
+[INFO ][20171212 17:25:01,463][PollingQueue:67] ===>bank order No  66662017121210000031, 上次通知时间lastNotifyTime:2017-12-12 17:25:01 392
+[INFO ][20171212 17:25:01,463][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:01,463][PollingTask:68] ===>notify id:eecdc9518f014588b0eff955dfbc0646, nextNotifyTime:2017-12-12 17:35:01 392
+[INFO ][20171212 17:25:01,463][PollingPersist:67] ===>bank order 66662017121210000031 need processing again 
+[INFO ][20171212 17:25:01,463][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:01,492][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:25:01,492][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:01,492][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:25:01,563][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[ERROR][20171212 17:25:01,621][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=deDfvnJtCGZoTiIOyS7b738MzIDQ9ZYYt9iJ9VAQwUWWZBtjzUUXUMofRM9UTppeZmGLPNqpPAVbohkQWiLdzZ0CpWS126xndTZHAqxsyjSV1bcmp6V/mjR+rdFYcMV/AMJg8O+xp0NmjQpexl3e8r4MCgIu3c9QE+y8IpVjOWAjbRa9T54qMieiCn272TF1c7BZNYuKMKDCR8HnWT0Rrm2CAhK8UjB+nZlmQVdjzg3GxXH2R+uFoHO6sqC6YQjD1e2CTa4MQajrMxwGFzMh+UO4YG4ILkgfR6zWKR30EV7dSfDzyEDf1V2ksGNF/sjFFZh6tedIfN/y/mCQlmp7KQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000032"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000032","point_amount":"0.00","receipt_amount":"0.00"},"sign":"qtLgpZLa82YRvQEaXNYpsQBcG0b9vqUqXcUShsSr0Si+BVmerpk91mTPtGFweoTvFDdQxdfvFDidrDMpSxQFlcgmhPM0sQbBrj7D+YAoei8His43vw+ircGdIC3j4Mue2UpRYUdDSBrghHNzUnRVF3SMhGDJxLVDQwPG6BGy/ee/MDoYkCiMwDx9tybD7BsmPqOA3LIhQpnEGrcpaSQevp+8s2hA2hnnTwWB8lsDIkAyUxVg7KVlQ+10QQjKG+VC1sZ8RRvWSggtiBS2mYp0gJeH99eu/ro9aSPBYDg4Mx6IVE2AsGrJojE0ttwbW6oiB6143z+Cx1jAcbA0rp+oAw=="}
+[INFO ][20171212 17:25:01,621][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:01,621][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000032
+[INFO ][20171212 17:25:01,621][PollingQueue:67] ===>bank order No  66662017121210000032, 上次通知时间lastNotifyTime:2017-12-12 17:25:01 563
+[INFO ][20171212 17:25:01,621][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:01,621][PollingTask:68] ===>notify id:2ad21ffe0e944a32b115c3abfbfc7f39, nextNotifyTime:2017-12-12 17:35:01 563
+[INFO ][20171212 17:25:01,621][PollingPersist:67] ===>bank order 66662017121210000032 need processing again 
+[INFO ][20171212 17:25:01,621][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:01,663][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:25:01,663][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:01,663][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:25:01,738][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[ERROR][20171212 17:25:01,826][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:01^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=exzvzKg7ici9VC9uvOk2zw5XSJ02OOOpn110gJvFj1/RuUuJrHwDAYU67G/luwtYmHuWLGtG9+FDtQz8IG1pvv45GmId9rhL5ATYq/H7BXIfwqFQeMlhKFEXQhUs/Uw1xCnPRDMoUY2qbVrl/J26DLJ2VXrckePWc0TIPoMN7UJZznl4WJynfPfZXVWWOpc5w94ExW8NzIC9b3gcj1iZ0/y/KLnIBkI8SzsHqwhKEFTxFbK0xii24brC52Rb4AR0KlVTTbdWs2mr/dmEBVZ7OiftHV6eyOC+WQn6d7MZxL6aPCCDGTrhE0AHeoQ4jmIo2stoAM0VhbAlOX1K9ZzZwA==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000033"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000033","point_amount":"0.00","receipt_amount":"0.00"},"sign":"UvX4yCH1VcNqr9wIa2Np7xIE4j8aRSutFLSTRo+jlieOXhPkadBTYTpDlwLuz9sdyS6pfYDmOx5JgHUQrjRrdmirB+yGNuCf7nH+8zz9jaVJ1WtxF706f+6MTBpS88P1fVOTvsWLoYkoPwnWnx9i/rSigcsV8fVzysUrJnh0IIlZsEk64t64dTlWolxUXFwqxeuEOFYKadZmCIQypDu7iSkNSW6Apei/DPnAlxMD5LpZIcOSCv1tOnkUlqFNqbZDHAovLJ2A9gLmygfIGfZ2AGmgacpj8N6aPWKDIlVAmNjRQ9c3Eja7p8MPxFxoE/6fu95a66hAn6kzje/dAQivdg=="}
+[INFO ][20171212 17:25:01,827][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:01,828][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000033
+[INFO ][20171212 17:25:01,828][PollingQueue:67] ===>bank order No  66662017121210000033, 上次通知时间lastNotifyTime:2017-12-12 17:25:01 738
+[INFO ][20171212 17:25:01,829][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:01,829][PollingTask:68] ===>notify id:be74b05ce1dd4c1b9232a25e86f83300, nextNotifyTime:2017-12-12 17:35:01 738
+[INFO ][20171212 17:25:01,830][PollingPersist:67] ===>bank order 66662017121210000033 need processing again 
+[INFO ][20171212 17:25:01,830][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:01,838][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:25:01,838][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:01,838][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:25:01,957][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[ERROR][20171212 17:25:02,015][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:02^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=Wo2VyBoffbmXtkOJcavXpJ2TFm+GemVFl+A28SMGHlIXv9xWR/qTINZtN3TywUVu5kewTt8+cDVuSy5bAZPXUXpFcYJtP4RMKKcDsHJ+M1uz1fO1znMKIba6duS1TzfqJmGy4f82spVEGmNO8ZKCzYIe8xbNtg4XCkQpG3hgpEzpxT6JOBcH0Hn/8c/d731tRaned2+tJxHoi/8nIW7RSDSYjUUdbOZbaBTnL0d7fy/GyMSZP9JP93UgwSXGrjt++o0dlKs3pD7F4InFtOWMsIaa1d1OFlsu0M1bGswN7Sx+kLdiKlScgtJxPB5dAx9LqrAOFhdx+NI3vVhmqiAmLQ==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:01^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000034"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000034","point_amount":"0.00","receipt_amount":"0.00"},"sign":"V6mU/GFRc2dWLUNeH0I1zGAwHmHXVPBLNkpmgRj7xz0d3n+ghl3GQOxnq189GHnwA34Hj/IXa7a8kwQJxTSiviOQmCCgtxwfMkhIEOUHdmD+ZEnWK1QcYhXGN6oWl9UExr/7waZHajBZfTGer9jZsFG0woiNoJS3jy2p449b6FE6/Lp0JB/DNqq93RPMwPWomchgwqBmfdSq/Ukg6n8VZ9r76kQwdrvYXKg1mY2T6mAuzYWgHdRvnj218abrmZMJu0ln96G1ZGixeYYfUoh63Q03QmmH69I2e6f5hIvi1S49TRKYT758lAEw+EITyPdGJ+KcmwmwsNn8imCKyJE0gw=="}
+[INFO ][20171212 17:25:02,015][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:02,015][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000034
+[INFO ][20171212 17:25:02,015][PollingQueue:67] ===>bank order No  66662017121210000034, 上次通知时间lastNotifyTime:2017-12-12 17:25:01 957
+[INFO ][20171212 17:25:02,015][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:02,015][PollingTask:68] ===>notify id:b8ac7ca65bac4afab30375b9b0f8c0fc, nextNotifyTime:2017-12-12 17:35:01 957
+[INFO ][20171212 17:25:02,015][PollingPersist:67] ===>bank order 66662017121210000034 need processing again 
+[INFO ][20171212 17:25:02,020][App$1$1:90] ==>tasks.size():7
+[INFO ][20171212 17:25:02,057][App$1:79] ==>threadPool.getActiveCount():1
+[INFO ][20171212 17:25:02,057][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:02,057][App$1:83] ==>tasks.size():7
+[INFO ][20171212 17:25:13,180][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:6 
+[INFO ][20171212 17:25:13,280][App$1:79] ==>threadPool.getActiveCount():2
+[INFO ][20171212 17:25:13,280][App$1:80] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171212 17:25:13,280][App$1:83] ==>tasks.size():6
+[ERROR][20171212 17:25:13,301][AlipayLogger:266] ErrorScene^_^40004^_^ACQ.TRADE_NOT_EXIST^_^null^_^Windows 7^_^2017-12-12 17:25:13^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=FUHKBJZGtC0V8MkPW0+8cCDxnbM4ti5WatBECeJadLu3fPpSvaD6N06CSbHBemlbw+51EUW0Dm3gIJgJ7tqm57BB+4C4HExlrW2CjNwCz1S1jaa4BV+hFZ9N7w4DaNj7A/KQ3pNzZJe+YjA4xcyycMtWWDPvGjdajGN+08nNd2FfBX02LTXaX6ZcyzSThd4dCnifUSrNSZhI/wD/wwXOX4FqL4/KhnEGGBwWN4y4UUSr2noppDzvcliyZh9ZgbhqpNdktQHipS5GyL+J0+Ep+ciCBzyfhgXaXs/sAg+pC5xKCga2o/H4efMif9RGo78X6stF5ZXto1H/AVcNJpzuIg==&version=1.0&app_id=2016082700319896&sign_type=RSA2&timestamp=2017-12-12 17:25:13^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-dynamicVersionNo&format=json^_^ApplicationParams:biz_content={    "out_trade_no":"66662017121210000035"  }^_^Body:{"alipay_trade_query_response":{"code":"40004","msg":"Business Failed","sub_code":"ACQ.TRADE_NOT_EXIST","sub_msg":"交易不存在","buyer_pay_amount":"0.00","invoice_amount":"0.00","out_trade_no":"66662017121210000035","point_amount":"0.00","receipt_amount":"0.00"},"sign":"GFcd570gWYSrAhpzUKMIP2M6UVAf5biEhCcj4XNODp9sSICYVGu5zFoH3JWoVjAlleDM0xAJm+4MSHOMmzqXtWuDIkCbOAH+k8nN7ybC3q0eKHaiLrLhcQqgUqjlWeOeLueSDnrZT46DTEEJuGw8Eg4+KoETlpAAJeiGdv8lNlHvxyz9AJ7zSZN1srUjlaII5gPXApDl3AzPXr71izRoSIZJt80vwuxkGMC6ijclXmFem8BDOmxJOg4ZPdyGRVkGi8uCpR5Q67nUFSkMKEs5Z6TcSR4ODJp5Oq7McMmNVRIKx8l+mlpx+DAS0RrELWzvRnsouwDp4628jkefeuIzIg=="}
+[INFO ][20171212 17:25:13,301][PollingPersist:61] order processing result:false
+[INFO ][20171212 17:25:13,301][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121210000035
+[INFO ][20171212 17:25:13,301][PollingQueue:67] ===>bank order No  66662017121210000035, 上次通知时间lastNotifyTime:2017-12-12 17:25:13 180
+[INFO ][20171212 17:25:13,301][PollingTask:64] ===>pollingTimes:3
+[INFO ][20171212 17:25:13,302][PollingTask:68] ===>notify id:56bc5ce19576499cbbdcaf0edb75d2e7, nextNotifyTime:2017-12-12 17:35:13 180
+[INFO ][20171212 17:25:13,302][PollingPersist:67] ===>bank order 66662017121210000035 need processing again 
+[INFO ][20171212 17:25:13,302][App$1$1:90] ==>tasks.size():7

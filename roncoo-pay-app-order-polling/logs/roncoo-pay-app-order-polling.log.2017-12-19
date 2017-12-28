@@ -1,0 +1,843 @@
+[INFO ][20171219 14:50:44,295][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a8806ef: startup date [Tue Dec 19 14:50:44 CST 2017]; root of context hierarchy
+[INFO ][20171219 14:50:44,343][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171219 14:50:44,543][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171219 14:50:44,592][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171219 14:50:44,779][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171219 14:50:44,798][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171219 14:50:44,816][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 14:50:44,844][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171219 14:50:44,859][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171219 14:50:44,871][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 14:50:44,882][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,882][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,883][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,883][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,884][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,886][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:44,887][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 14:50:45,284][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171219 14:50:45,285][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171219 14:50:45,355][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e7912d8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,targetConnectionFactory,pooledConnectionFactory,connectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171219 14:50:45,728][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171219 14:50:47,303][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171219 14:50:47,307][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 14:50:47,853][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-63811-1513666247735-1:1,clientId=null,started=false}] }
+[INFO ][20171219 14:50:47,882][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 14:50:47,882][App:96] ==>startThread
+[INFO ][20171219 14:50:47,884][App:79] == context start
+[INFO ][20171219 14:50:47,949][PollingMessageListener:53] == receive bankOrderNo :66662017121310000038
+[INFO ][20171219 14:50:47,984][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:50:47,985][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:47,985][App$1:107] ==>tasks.size():0
+[INFO ][20171219 14:50:48,198][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:50:48,203][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 199
+[INFO ][20171219 14:50:48,205][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 14:50:48,234][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:50:48 199
+[INFO ][20171219 14:50:48,236][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[INFO ][20171219 14:50:48,240][PollingMessageListener:53] == receive bankOrderNo :66662017121310000039
+[INFO ][20171219 14:50:48,240][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:50:48,241][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 241
+[INFO ][20171219 14:50:48,241][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 14:50:48,246][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:50:48 241
+[INFO ][20171219 14:50:48,246][PollingMessageListener:53] == receive bankOrderNo :66662017121310000040
+[INFO ][20171219 14:50:48,247][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:50:48,247][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 247
+[INFO ][20171219 14:50:48,247][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 14:50:48,248][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:50:48 247
+[INFO ][20171219 14:50:48,248][PollingMessageListener:53] == receive bankOrderNo :66662017121910000001
+[INFO ][20171219 14:50:48,248][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121910000001
+[INFO ][20171219 14:50:48,249][PollingQueue:67] ===>bank order No  66662017121910000001, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 249
+[INFO ][20171219 14:50:48,249][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 14:50:48,249][PollingTask:70] ===>notify id:8708ace8a2014b7f8de8072eb76e34b3, nextNotifyTime:2017-12-19 14:50:48 249
+[INFO ][20171219 14:50:48,335][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:48,336][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:48,336][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:50:48,445][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:48,450][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:48,450][App$1:107] ==>tasks.size():2
+[INFO ][20171219 14:50:48,550][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:48,550][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:48,550][App$1:107] ==>tasks.size():1
+[ERROR][20171219 14:50:48,628][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:50:48,631][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:50:48,631][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 236
+[INFO ][20171219 14:50:48,631][PollingTask:63] ===>pollingTimes:1
+[INFO ][20171219 14:50:48,633][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:50:53 236
+[INFO ][20171219 14:50:48,633][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:50:48,633][App$1$1:114] ==>tasks.size():1
+[INFO ][20171219 14:50:48,633][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[ERROR][20171219 14:50:48,636][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:50:48,636][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:50:48,636][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 633
+[INFO ][20171219 14:50:48,637][PollingTask:63] ===>pollingTimes:1
+[INFO ][20171219 14:50:48,637][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:50:53 633
+[INFO ][20171219 14:50:48,637][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:50:48,637][App$1$1:114] ==>tasks.size():2
+[INFO ][20171219 14:50:48,637][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[ERROR][20171219 14:50:48,640][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:50:48,640][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:50:48,641][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:50:48 637
+[INFO ][20171219 14:50:48,641][PollingTask:63] ===>pollingTimes:1
+[INFO ][20171219 14:50:48,642][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:50:53 637
+[INFO ][20171219 14:50:48,642][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:50:48,642][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:50:48,642][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[INFO ][20171219 14:50:48,650][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:48,650][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:48,650][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:50:48,655][RpTradePaymentManagerServiceImpl:1075] 订单号:[66662017121910000001],交易类型：[ALIPAY]
+[INFO ][20171219 14:50:53,337][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:53,337][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:53,337][App$1:107] ==>tasks.size():2
+[INFO ][20171219 14:50:53,734][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:53,734][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:53,734][App$1:107] ==>tasks.size():1
+[INFO ][20171219 14:50:53,837][App$1:103] ==>threadPool.getActiveCount():2
+[INFO ][20171219 14:50:53,837][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:50:53,837][App$1:107] ==>tasks.size():0
+[INFO ][20171219 14:50:54,378][RpTradePaymentManagerServiceImpl:1102] 支付宝--即时到账订单查询!订单号:[66662017121910000001]
+[INFO ][20171219 14:51:17,324][RpTradePaymentManagerServiceImpl:367] 订单支付成功!
+[INFO ][20171219 14:51:17,510][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171219 14:51:20,022][PollingPersist:61] order processing result:true
+[INFO ][20171219 14:51:20,024][App$1$1:114] ==>tasks.size():0
+[INFO ][20171219 14:51:20,024][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:20,036][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:20,037][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:20,037][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:20 024
+[INFO ][20171219 14:51:20,037][PollingTask:63] ===>pollingTimes:2
+[INFO ][20171219 14:51:20,038][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:51:25 024
+[INFO ][20171219 14:51:20,038][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:20,038][App$1$1:114] ==>tasks.size():1
+[INFO ][20171219 14:51:20,039][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:20,044][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:20,044][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:20,044][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:20 039
+[INFO ][20171219 14:51:20,044][PollingTask:63] ===>pollingTimes:2
+[INFO ][20171219 14:51:20,044][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:51:25 039
+[INFO ][20171219 14:51:20,045][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:20,045][App$1$1:114] ==>tasks.size():2
+[INFO ][20171219 14:51:20,045][PollingPersist:57] notifyTimes:1  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:20,049][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:20,050][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:20,050][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:20 045
+[INFO ][20171219 14:51:20,050][PollingTask:63] ===>pollingTimes:2
+[INFO ][20171219 14:51:20,050][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:51:25 045
+[INFO ][20171219 14:51:20,050][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:20,050][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:25,025][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:25,031][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:25,032][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:25,032][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:25 025
+[INFO ][20171219 14:51:25,032][PollingTask:63] ===>pollingTimes:3
+[INFO ][20171219 14:51:25,033][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:51:30 025
+[INFO ][20171219 14:51:25,033][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:25,033][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:25,125][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:25,127][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:25,128][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:25,128][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:25,149][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:25,149][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:25,149][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:25 128
+[INFO ][20171219 14:51:25,150][PollingTask:63] ===>pollingTimes:3
+[INFO ][20171219 14:51:25,150][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:51:30 128
+[INFO ][20171219 14:51:25,150][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:25,150][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:25,231][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:25,231][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:25,233][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:25,233][PollingPersist:57] notifyTimes:2  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:25,234][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:25,234][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:25,235][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:25 233
+[INFO ][20171219 14:51:25,235][PollingTask:63] ===>pollingTimes:3
+[INFO ][20171219 14:51:25,235][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:51:30 233
+[INFO ][20171219 14:51:25,235][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:25,235][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:25,333][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:25,333][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:25,333][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:30,026][PollingPersist:57] notifyTimes:3  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:30,029][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:30,030][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:30,031][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:30 026
+[INFO ][20171219 14:51:30,031][PollingTask:63] ===>pollingTimes:4
+[INFO ][20171219 14:51:30,033][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:51:35 026
+[INFO ][20171219 14:51:30,033][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:30,034][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:30,126][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:30,126][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:30,128][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:30,128][PollingPersist:57] notifyTimes:3  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:30,130][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:30,130][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:30,130][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:30 128
+[INFO ][20171219 14:51:30,130][PollingTask:63] ===>pollingTimes:4
+[INFO ][20171219 14:51:30,130][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:51:35 128
+[INFO ][20171219 14:51:30,131][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:30,131][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:30,228][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:30,228][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:30,228][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:30,234][PollingPersist:57] notifyTimes:3  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:30,236][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:30,236][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:30,236][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:30 234
+[INFO ][20171219 14:51:30,236][PollingTask:63] ===>pollingTimes:4
+[INFO ][20171219 14:51:30,237][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:51:35 234
+[INFO ][20171219 14:51:30,237][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:30,237][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:30,334][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:30,334][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:30,334][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:35,027][PollingPersist:57] notifyTimes:4  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:35,030][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:35,030][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:35,030][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:35 027
+[INFO ][20171219 14:51:35,031][PollingTask:63] ===>pollingTimes:5
+[INFO ][20171219 14:51:35,031][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:51:40 027
+[INFO ][20171219 14:51:35,031][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:35,031][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:35,127][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:35,128][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:35,129][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:35,130][PollingPersist:57] notifyTimes:4  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:35,134][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:35,134][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:35,134][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:35 130
+[INFO ][20171219 14:51:35,135][PollingTask:63] ===>pollingTimes:5
+[INFO ][20171219 14:51:35,135][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:51:40 130
+[INFO ][20171219 14:51:35,135][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:35,135][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:35,229][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:35,229][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:35,229][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:35,240][PollingPersist:57] notifyTimes:4  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:35,244][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:35,244][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:35,245][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:35 240
+[INFO ][20171219 14:51:35,245][PollingTask:63] ===>pollingTimes:5
+[INFO ][20171219 14:51:35,245][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:51:40 240
+[INFO ][20171219 14:51:35,245][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:35,245][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:35,337][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:35,337][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:35,337][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:40,030][PollingPersist:57] notifyTimes:5  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:40,034][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:40,037][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:40,037][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:40 030
+[INFO ][20171219 14:51:40,043][PollingTask:63] ===>pollingTimes:6
+[INFO ][20171219 14:51:40,043][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:51:50 030
+[INFO ][20171219 14:51:40,044][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:40,044][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:40,132][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:40,133][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:40,134][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:40,147][PollingPersist:57] notifyTimes:5  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:40,152][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:40,153][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:40,153][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:40 146
+[INFO ][20171219 14:51:40,153][PollingTask:63] ===>pollingTimes:6
+[INFO ][20171219 14:51:40,153][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:51:50 146
+[INFO ][20171219 14:51:40,153][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:40,153][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:40,249][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:40,249][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:40,249][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:40,249][PollingPersist:57] notifyTimes:5  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:40,252][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:40,252][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:40,252][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:40 249
+[INFO ][20171219 14:51:40,253][PollingTask:63] ===>pollingTimes:6
+[INFO ][20171219 14:51:40,253][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:51:50 249
+[INFO ][20171219 14:51:40,253][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:40,253][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:40,349][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:40,354][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:40,355][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:50,032][PollingPersist:57] notifyTimes:6  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:50,039][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:50,040][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:51:50,040][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:51:50 032
+[INFO ][20171219 14:51:50,040][PollingTask:63] ===>pollingTimes:7
+[INFO ][20171219 14:51:50,041][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:52:00 032
+[INFO ][20171219 14:51:50,041][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:51:50,042][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:50,133][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:50,134][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:50,134][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:50,147][PollingPersist:57] notifyTimes:6  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:50,152][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:50,153][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:51:50,154][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:51:50 147
+[INFO ][20171219 14:51:50,154][PollingTask:63] ===>pollingTimes:7
+[INFO ][20171219 14:51:50,155][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:52:00 147
+[INFO ][20171219 14:51:50,155][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:51:50,155][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:50,247][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:50,247][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:50,247][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:51:50,250][PollingPersist:57] notifyTimes:6  , maxNotifyTimes:10 
+[ERROR][20171219 14:51:50,251][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:51:50,251][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:51:50,252][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:51:50 250
+[INFO ][20171219 14:51:50,252][PollingTask:63] ===>pollingTimes:7
+[INFO ][20171219 14:51:50,252][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:52:00 250
+[INFO ][20171219 14:51:50,252][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:51:50,252][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:51:50,356][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:51:50,356][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:51:50,360][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:00,033][PollingPersist:57] notifyTimes:7  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:00,049][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:00,050][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:52:00,050][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:52:00 033
+[INFO ][20171219 14:52:00,050][PollingTask:63] ===>pollingTimes:8
+[INFO ][20171219 14:52:00,051][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:52:15 033
+[INFO ][20171219 14:52:00,051][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:52:00,051][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:00,133][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:00,133][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:00,133][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:00,148][PollingPersist:57] notifyTimes:7  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:00,150][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:00,151][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:52:00,151][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:52:00 148
+[INFO ][20171219 14:52:00,152][PollingTask:63] ===>pollingTimes:8
+[INFO ][20171219 14:52:00,152][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:52:15 148
+[INFO ][20171219 14:52:00,152][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:52:00,152][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:00,248][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:00,248][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:00,248][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:00,251][PollingPersist:57] notifyTimes:7  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:00,252][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:00,253][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:52:00,253][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:52:00 251
+[INFO ][20171219 14:52:00,253][PollingTask:63] ===>pollingTimes:8
+[INFO ][20171219 14:52:00,254][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:52:15 251
+[INFO ][20171219 14:52:00,254][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:52:00,254][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:00,352][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:00,352][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:00,353][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:15,035][PollingPersist:57] notifyTimes:8  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:15,038][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:15,039][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000038
+[INFO ][20171219 14:52:15,039][PollingQueue:67] ===>bank order No  66662017121310000038, 上次通知时间lastNotifyTime:2017-12-19 14:52:15 035
+[INFO ][20171219 14:52:15,039][PollingTask:63] ===>pollingTimes:9
+[INFO ][20171219 14:52:15,040][PollingTask:70] ===>notify id:418f41c695bb42948a988ed49f63bd94, nextNotifyTime:2017-12-19 14:52:30 035
+[INFO ][20171219 14:52:15,040][PollingPersist:87] ===>bank order 66662017121310000038 need processing again 
+[INFO ][20171219 14:52:15,040][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:15,134][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:15,134][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:15,134][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:15,149][PollingPersist:57] notifyTimes:8  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:15,152][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:15,153][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000039
+[INFO ][20171219 14:52:15,153][PollingQueue:67] ===>bank order No  66662017121310000039, 上次通知时间lastNotifyTime:2017-12-19 14:52:15 149
+[INFO ][20171219 14:52:15,153][PollingTask:63] ===>pollingTimes:9
+[INFO ][20171219 14:52:15,153][PollingTask:70] ===>notify id:296a9a440db2426787cb91cca673aa51, nextNotifyTime:2017-12-19 14:52:30 149
+[INFO ][20171219 14:52:15,153][PollingPersist:87] ===>bank order 66662017121310000039 need processing again 
+[INFO ][20171219 14:52:15,153][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:15,249][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:15,249][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:15,249][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:15,252][PollingPersist:57] notifyTimes:8  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:15,255][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:15,255][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121310000040
+[INFO ][20171219 14:52:15,255][PollingQueue:67] ===>bank order No  66662017121310000040, 上次通知时间lastNotifyTime:2017-12-19 14:52:15 252
+[INFO ][20171219 14:52:15,255][PollingTask:63] ===>pollingTimes:9
+[INFO ][20171219 14:52:15,255][PollingTask:70] ===>notify id:ca2cf4c2c5844ff0ae6d483c72bf2dd1, nextNotifyTime:2017-12-19 14:52:30 252
+[INFO ][20171219 14:52:15,255][PollingPersist:87] ===>bank order 66662017121310000040 need processing again 
+[INFO ][20171219 14:52:15,255][App$1$1:114] ==>tasks.size():3
+[INFO ][20171219 14:52:15,356][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:15,356][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:15,357][App$1:107] ==>tasks.size():3
+[INFO ][20171219 14:52:30,036][PollingPersist:57] notifyTimes:9  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:30,037][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:30,038][PollingPersist:89] bank order No 66662017121310000038 not pay
+[INFO ][20171219 14:52:30,038][App$1$1:114] ==>tasks.size():2
+[INFO ][20171219 14:52:30,137][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:30,137][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:30,137][App$1:107] ==>tasks.size():2
+[INFO ][20171219 14:52:30,155][PollingPersist:57] notifyTimes:9  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:30,161][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:30,161][PollingPersist:89] bank order No 66662017121310000039 not pay
+[INFO ][20171219 14:52:30,161][App$1$1:114] ==>tasks.size():1
+[INFO ][20171219 14:52:30,255][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:30,255][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:30,255][App$1:107] ==>tasks.size():1
+[INFO ][20171219 14:52:30,255][PollingPersist:57] notifyTimes:9  , maxNotifyTimes:10 
+[ERROR][20171219 14:52:30,262][PollingPersist:83] 订单处理系统异常:
+java.lang.NullPointerException
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl.processingTradeRecord(RpTradePaymentManagerServiceImpl.java:1075)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$FastClassByCGLIB$$b2e13c9e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:627)
+	at com.roncoo.pay.trade.service.impl.RpTradePaymentManagerServiceImpl$$EnhancerByCGLIB$$b8853f78.processingTradeRecord(<generated>)
+	at com.roncoo.pay.app.polling.core.PollingPersist.getOrderResult(PollingPersist.java:59)
+	at com.roncoo.pay.app.polling.core.PollingTask.run(PollingTask.java:91)
+	at com.roncoo.pay.app.polling.App$1$1.run(App.java:113)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ][20171219 14:52:30,262][PollingPersist:89] bank order No 66662017121310000040 not pay
+[INFO ][20171219 14:52:30,262][App$1$1:114] ==>tasks.size():0
+[INFO ][20171219 14:52:30,355][App$1:103] ==>threadPool.getActiveCount():1
+[INFO ][20171219 14:52:30,355][App$1:104] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 14:52:30,355][App$1:107] ==>tasks.size():0
+[INFO ][20171219 17:25:51,787][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Tue Dec 19 17:25:51 CST 2017]; root of context hierarchy
+[INFO ][20171219 17:25:51,840][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171219 17:25:51,998][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171219 17:25:52,017][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171219 17:25:52,151][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171219 17:25:52,169][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171219 17:25:52,181][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 17:25:52,194][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171219 17:25:52,205][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171219 17:25:52,219][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 17:25:52,230][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,230][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,231][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,232][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,232][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,233][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,239][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 17:25:52,525][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171219 17:25:52,525][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171219 17:25:52,573][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13eb8acf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,targetConnectionFactory,pooledConnectionFactory,connectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171219 17:25:52,860][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171219 17:25:53,988][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171219 17:25:53,991][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 17:25:54,357][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-61979-1513675554223-1:1,clientId=null,started=false}] }
+[INFO ][20171219 17:25:54,424][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 17:25:54,424][App:100] ==>startThread
+[INFO ][20171219 17:25:54,426][App:83] == context start
+[INFO ][20171219 17:25:54,468][PollingMessageListener:53] == receive bankOrderNo :66662017121910000002
+[INFO ][20171219 17:25:54,527][App$1:107] ==>threadPool.getActiveCount():1
+[INFO ][20171219 17:25:54,528][App$1:108] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 17:25:54,529][App$1:111] ==>tasks.size():0
+[INFO ][20171219 17:25:54,707][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121910000002
+[INFO ][20171219 17:25:54,710][PollingQueue:67] ===>bank order No  66662017121910000002, 上次通知时间lastNotifyTime:2017-12-19 17:25:54 707
+[INFO ][20171219 17:25:54,712][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 17:25:54,738][PollingTask:70] ===>notify id:efbff51a86bb404796ff3cecfa833978, nextNotifyTime:2017-12-19 17:25:54 707
+[INFO ][20171219 17:25:54,740][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[INFO ][20171219 17:25:54,839][App$1:107] ==>threadPool.getActiveCount():2
+[INFO ][20171219 17:25:54,839][App$1:108] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 17:25:54,839][App$1:111] ==>tasks.size():0
+[INFO ][20171219 17:25:55,060][RpTradePaymentManagerServiceImpl:1078] 订单号:[66662017121910000002],交易类型：[ALIPAY]
+[INFO ][20171219 17:25:55,061][RpTradePaymentManagerServiceImpl:1105] 支付宝--即时到账订单查询!订单号:[66662017121910000002]
+[INFO ][20171219 17:25:55,813][RpTradePaymentManagerServiceImpl:367] 订单支付成功!
+[INFO ][20171219 17:25:55,871][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171219 17:25:56,040][PollingPersist:61] order processing result:true
+[INFO ][20171219 17:25:56,040][App$1$1:118] ==>tasks.size():0
+[INFO ][20171219 18:03:53,105][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@368239c8: startup date [Tue Dec 19 18:03:53 CST 2017]; root of context hierarchy
+[INFO ][20171219 18:03:53,173][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context.xml]
+[INFO ][20171219 18:03:53,350][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-jdbc.xml]
+[INFO ][20171219 18:03:53,371][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-context-service.xml]
+[INFO ][20171219 18:03:53,543][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+[INFO ][20171219 18:03:53,629][DefaultListableBeanFactory:665] Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-jdbc.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=init; destroyMethodName=clone; defined in class path resource [spring/spring-mybatis.xml]]
+[INFO ][20171219 18:03:53,639][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 18:03:53,650][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-reconciliation.xml]
+[INFO ][20171219 18:03:53,658][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-polling.xml]
+[INFO ][20171219 18:03:53,672][XmlBeanDefinitionReader:315] Loading XML bean definitions from class path resource [spring/spring-activemq.xml]
+[INFO ][20171219 18:03:53,683][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsTemplate': replacing [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.core.JmsTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,684][DefaultListableBeanFactory:665] Overriding bean definition for bean 'targetConnectionFactory': replacing [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.ActiveMQConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,684][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pooledConnectionFactory': replacing [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.pool.PooledConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,685][DefaultListableBeanFactory:665] Overriding bean definition for bean 'connectionFactory': replacing [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.connection.SingleConnectionFactory]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,685][DefaultListableBeanFactory:665] Overriding bean definition for bean 'queueDestination': replacing [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.apache.activemq.command.ActiveMQQueue]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,686][DefaultListableBeanFactory:665] Overriding bean definition for bean 'pollingMessageListener': replacing [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [com.roncoo.pay.app.polling.listener.PollingMessageListener]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,688][DefaultListableBeanFactory:665] Overriding bean definition for bean 'jmsContainer': replacing [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]] with [Generic bean: class [org.springframework.jms.listener.DefaultMessageListenerContainer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/spring-activemq.xml]]
+[INFO ][20171219 18:03:53,975][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq_config.properties]
+[INFO ][20171219 18:03:53,976][PropertiesLoaderSupport:172] Loading properties file from class path resource [jdbc.properties]
+[INFO ][20171219 18:03:54,043][DefaultListableBeanFactory:598] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@13eb8acf: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,pollingPersist,pollingQueue,org.springframework.aop.config.internalAutoProxyCreator,dataSource,rpAccountDaoImpl,rpAccountHistoryDaoImpl,rpSettDailyCollectDaoImpl,rpSettRecordAnnexDaoImpl,rpSettRecordDaoImpl,rpAccountHistoryService,rpAccountQueryService,rpAccountService,rpAccountTransactionService,rpSettHandleService,rpSettQueryService,rpNotifyRecordDao,rpNotifyRecordLogDao,rpNotifyService,pmsMenuDao,pmsRoleMenuDao,pmsOperatorDaoImpl,pmsOperatorLogDaoImpl,pmsOperatorRoleDaoImpl,pmsPermissionDaoImpl,pmsRoleDaoImpl,pmsRolePermissionDaoImpl,pmsMenuRoleService,pmsMenuService,pmsOperatorLogService,pmsOperatorRoleService,pmsOperatorService,pmsPermissionService,pmsRolePermissionService,pmsRoleService,rpAccountCheckBatchDaoImpl,rpAccountCheckMistakeDaoImpl,rpAccountCheckMistakeScratchPoolDaoImpl,reconciliationFactory,rpAccountCheckBatchService,rpAccountCheckMistakeScratchPoolService,rpAccountCheckMistakeService,rpAccountCheckTransactionService,rpTradePaymentOrderDao,rpTradePaymentRecordDao,rpTradePaymentManagerService,rpTradePaymentQueryService,rpTradeReconciliationService,buildNoDaoImpl,rpPayProductDaoImpl,rpPayWayDaoImpl,rpUserBankAccountDaoImpl,rpUserInfoDaoImpl,rpUserPayConfigDaoImpl,rpUserPayInfoDaoImpl,buildNoService,rpPayProductService,rpPayWayService,rpUserBankAccountService,rpUserInfoService,rpUserPayConfigService,rpUserPayInfoService,propertyConfigurer,sqlSessionFactory,sessionTemplate,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,jmsTemplate,targetConnectionFactory,pooledConnectionFactory,connectionFactory,queueDestination,pollingMessageListener,jmsContainer,WEIXIN,ALIPAY,threadPool,pollingParam,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20171219 18:03:54,341][DruidDataSource:722] {dataSource-1} inited
+[INFO ][20171219 18:03:55,543][ExecutorConfigurationSupport:154] Initializing ExecutorService  'threadPool'
+[INFO ][20171219 18:03:55,547][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 18:03:55,823][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:SKY-20170505DYO-59823-1513677835712-1:1,clientId=null,started=false}] }
+[INFO ][20171219 18:03:55,874][DefaultLifecycleProcessor$LifecycleGroup:334] Starting beans in phase 2147483647
+[INFO ][20171219 18:03:55,875][App:100] ==>startThread
+[INFO ][20171219 18:03:55,878][App:83] == context start
+[INFO ][20171219 18:03:55,899][PollingMessageListener:53] == receive bankOrderNo :66662017121910000003
+[INFO ][20171219 18:03:55,997][App$1:107] ==>threadPool.getActiveCount():1
+[INFO ][20171219 18:03:55,998][App$1:108] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 18:03:55,998][App$1:111] ==>tasks.size():0
+[INFO ][20171219 18:03:56,292][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121910000003
+[INFO ][20171219 18:03:56,303][PollingQueue:67] ===>bank order No  66662017121910000003, 上次通知时间lastNotifyTime:2017-12-19 18:03:56 293
+[INFO ][20171219 18:03:56,305][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 18:03:56,333][PollingTask:70] ===>notify id:4a3f11fd57564a45a4faa586274648c7, nextNotifyTime:2017-12-19 18:03:56 293
+[INFO ][20171219 18:03:56,335][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[INFO ][20171219 18:03:56,337][PollingMessageListener:53] == receive bankOrderNo :66662017121910000004
+[INFO ][20171219 18:03:56,338][PollingQueue:55] ===>addToOrderQueryTaskDelayQueue bank order no:66662017121910000004
+[INFO ][20171219 18:03:56,338][PollingQueue:67] ===>bank order No  66662017121910000004, 上次通知时间lastNotifyTime:2017-12-19 18:03:56 338
+[INFO ][20171219 18:03:56,338][PollingTask:63] ===>pollingTimes:0
+[INFO ][20171219 18:03:56,338][PollingTask:70] ===>notify id:fd212ecbe2ca46ee82d925bae42928f5, nextNotifyTime:2017-12-19 18:03:56 338
+[INFO ][20171219 18:03:56,446][App$1:107] ==>threadPool.getActiveCount():2
+[INFO ][20171219 18:03:56,446][App$1:108] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 18:03:56,446][App$1:111] ==>tasks.size():1
+[INFO ][20171219 18:03:56,547][App$1:107] ==>threadPool.getActiveCount():2
+[INFO ][20171219 18:03:56,547][App$1:108] ==>threadPool.getMaxPoolSize():5
+[INFO ][20171219 18:03:56,548][App$1:111] ==>tasks.size():0
+[INFO ][20171219 18:03:56,668][RpTradePaymentManagerServiceImpl:1091] 订单号:[66662017121910000003],交易类型：[ALIPAY]
+[INFO ][20171219 18:03:56,670][RpTradePaymentManagerServiceImpl:1118] 支付宝--即时到账订单查询!订单号:[66662017121910000003]
+[INFO ][20171219 18:03:58,083][RpTradePaymentManagerServiceImpl:367] 订单支付成功!
+[INFO ][20171219 18:03:58,205][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171219 18:03:58,291][PollingPersist:61] order processing result:true
+[INFO ][20171219 18:03:58,291][App$1$1:118] ==>tasks.size():0
+[INFO ][20171219 18:03:58,291][PollingPersist:57] notifyTimes:0  , maxNotifyTimes:10 
+[INFO ][20171219 18:03:58,295][RpTradePaymentManagerServiceImpl:1091] 订单号:[66662017121910000004],交易类型：[ALIPAY]
+[INFO ][20171219 18:03:58,295][RpTradePaymentManagerServiceImpl:1118] 支付宝--即时到账订单查询!订单号:[66662017121910000004]
+[INFO ][20171219 18:03:58,430][RpTradePaymentManagerServiceImpl:367] 订单支付成功!
+[INFO ][20171219 18:03:58,478][RpAccountTransactionServiceImpl:163] 账户加款成功，并记录了账户历史
+[INFO ][20171219 18:03:58,495][PollingPersist:61] order processing result:true
+[INFO ][20171219 18:03:58,495][App$1$1:118] ==>tasks.size():0

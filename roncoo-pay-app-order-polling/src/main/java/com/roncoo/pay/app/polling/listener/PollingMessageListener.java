@@ -52,17 +52,18 @@ public class PollingMessageListener implements MessageListener {
 			final String msgText = msg.getText();
 			log.info("== receive bankOrderNo :" + msgText);
 
+			//订单结果查询实体,主要用于MQ查询上游订单结果时,查询规则及查询结果
 			RpOrderResultQueryVo rpOrderResultQueryVo = new RpOrderResultQueryVo();
 
-			rpOrderResultQueryVo.setBankOrderNo(msgText);
-			rpOrderResultQueryVo.setStatus(NotifyStatusEnum.CREATED.name());
+			rpOrderResultQueryVo.setBankOrderNo(msgText); //银行订单号 6666开头
+			rpOrderResultQueryVo.setStatus(NotifyStatusEnum.CREATED.name()); //通知记录已创建
 			rpOrderResultQueryVo.setCreateTime(new Date());
 			rpOrderResultQueryVo.setEditTime(new Date());
-			rpOrderResultQueryVo.setLastNotifyTime(new Date());
+			rpOrderResultQueryVo.setLastNotifyTime(new Date()); //最后一次通知时间
 			rpOrderResultQueryVo.setNotifyTimes(0); // 初始化通知0次
-			rpOrderResultQueryVo.setLimitNotifyTimes(pollingParam.getMaxNotifyTimes()); // 最大通知次数
+			rpOrderResultQueryVo.setLimitNotifyTimes(pollingParam.getMaxNotifyTimes()); // 最大通知次数，xml中配置10
 			Map<Integer, Integer> notifyParams = pollingParam.getNotifyParams();
-			rpOrderResultQueryVo.setNotifyRule(JSONObject.toJSONString(notifyParams)); // 保存JSON
+			rpOrderResultQueryVo.setNotifyRule(JSONObject.toJSONString(notifyParams)); // 通知规则， 保存JSON
 
 			try {
 

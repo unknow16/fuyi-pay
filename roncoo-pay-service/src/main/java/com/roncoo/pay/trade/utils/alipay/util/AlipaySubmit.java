@@ -1,23 +1,18 @@
 package com.roncoo.pay.trade.utils.alipay.util;
 
+import com.roncoo.pay.trade.utils.alipay.config.AlipayConfigUtil;
+import com.roncoo.pay.trade.utils.alipay.sign.MD5;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Node;
+import org.dom4j.io.SAXReader;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.Node;
-import org.dom4j.io.SAXReader;
-
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.AlipayClient;
-import com.alipay.api.DefaultAlipayClient;
-import com.alipay.api.request.AlipayTradePagePayRequest;
-import com.roncoo.pay.trade.utils.alipay.AlipayConfigUtil;
-import com.roncoo.pay.trade.utils.alipay.sign.MD5;
 
 
 /* *
@@ -36,8 +31,7 @@ public class AlipaySubmit {
     /**
      * 支付宝提供给商户的服务接入网关URL(新)
      */
-    //private static final String ALIPAY_GATEWAY_NEW = "https://mapi.alipay.com/gateway.do?";
-    private static final String ALIPAY_GATEWAY_NEW = "https://openapi.alipaydev.com/gateway.do?";
+    private static final String ALIPAY_GATEWAY_NEW = "https://mapi.alipay.com/gateway.do?";
 	
     /**
      * 生成签名结果
@@ -103,60 +97,7 @@ public class AlipaySubmit {
         return sbHtml.toString();
     }
     
-    /**
-     * AliPay新调用方法
-     * 生成请求form代码
-     * @param sParaTemp
-     * @param string
-     * @param string2
-     * @return
-     */
-    public static String buildRequest1(Map<String, String> sParaTemp, String string, String string2) {
-		/*AlipayClient alipayClient = new DefaultAlipayClient("http://openapi.alipaydev.com/gateway.do",
-				"2016082700319896",
-				"MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3Jc/+CXV21ze7Ys/67YVrIvlxOVxn4lKMOMhgol3Yx/5bGt250nxhKv1yJ7mZzXXv/6aHwhGSrszsElOfRIIk+NQAlFvj1z432e/iX3vMSSKu7MBqimhnxG4rA/q2xfFUAkgn/85cIlzSmwbWEUlo5t19MTea/8ANs3HaYDo33x/Dv47/i37EnIWbE7hX/qMSbsglgbD0/hU64WfgIU+ZcebykEnq6tmGPj+7j8g582MwcfLQGc3eGWMR/MrHvttKjr5H8BUYjS9Ta5zXzF/qhLzH6EAVLo4dIf2VNeIMX41K0fkgbH+zx+GQ45ZII1E/PEk3r3sPuC5gw4ltssxHAgMBAAECggEBAKA0TEcsIPsOcWrRmZomkNFRq57WDTW17H1J4kVdYfgRoTYyPwefzjr07vQfOaQG7IY+O35/TP3hN9G8ijdEJw+ONWw4WlTn4D3cvpBm85ST2OnooLvRTFiQo8mu1m1wopPY1yNeCTXgvQ9gmk9AmdVQNSigl8JWurmBYTMjf2mEnQl90xjilOB67TYhJ2/Ay+AAZpWqXln7QzspOF0ce98v9JWTjIcCTxhBS5yS0Lum02o2DguHF/5po1sTF2R/U+rE3+FgKumnTTkbs5T0kYEKXIx9ZjbqNSayXsk+uTy0PsnQlkfi7Wlbp2VbJ+pS9+DY6qx7KbollKZKSKHhZZECgYEA/QbvRVKHXQO2HQTLznV7MuSqgeJ8+bjvbTJuMmqhhLScXTMq5MnOzXhUeMQcwR0HeD4u7OsN+gq9s8Li3Vaa6wCdiEla9wVxaH7lYX72ilfX5sOZHbrBnEOOTfoLqRExTnVNbHtApWHZOPUv7RKbjA+iLKurdzXviyQNZXbnH4kCgYEAuUyxFFlNALLkbVxLGFYlFyhiaHNAbghjLQ/GrXrM8MSn3WZHn1KaRqiSyIRJzMbRUNn0EeVKi2r/nShWeYDPu7XXWiWcmJku2Y/DYqDHsbBmGkLNFD/achW0OYYSUzAb/ywL1IRe1v3sx5qdO8StDX+WIV0RyBYJbhn4JsbSSU8CgYA4euTMH5jxrVNodNqdkmHWwW5CIfFtuNdRE7G/dUfqnHpO344Sle2gtdx9PKGChd1V/ONypSFwkBc6WiVT7PIVxQRlGKLCgyeGgNTpB3M2/FbIPx8doMN5AydvxoH10k2kStDmhzit8gKQEUMKc13fTNoRiJx0tshq0bhfzsPWqQKBgQCBJnDty+gdqpIHnyJADhq/70fXoSyxBGuLhsllNIgO8CJH7/fPlhUtVmUoGPwPHCvb/G1e4793ONZ8RRcwjJU9MdqtXDWvLmU3AjqeTY2hzV78wr6JdI/eoD4DMe0nygpZaeu87Z3knwsffCZG+CfdlqWfD21LVgCwmq0Y6c67hQKBgQCKjUkfAAFV/qLRKsZ5mfeAlkNu8ErgksstHvzW2AvRPZT805tude60EFnfWESb2a4KBNJge2h1v14v4oGwdOhRvYAHkhcyX/dR8OiQb/Iti1/6eEDwN7UkPY5i/hmgsb70wcgX2zSOfLlf9Gya7qdKYiwKBlgX/SGa3AJgKlKqlA==",
-				"json",
-				"utf-8",
-				"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu6DtX7fm2hEUVqD4+dwg0Jc0nC5R+T57JVxihKqN6b12G7Sh30ZG3ZpHr6vep24wfIHiIlRuUjAZ2MABrE2n8z1dh8N3gDKB9ljCMYqStTljADSPfXt3zwqL6ONsZhHyV7Eo8pHQEKnq+p0bRw4jSLrgyBFdlEmIp2aqOZYNKfd1bfzPCKdHteE1wnKDH4SyUc6U2dZ+Ea0wBmQMzTfTgkgArE6Oyh5fXoSZLC7nmgwZe167rWmKuTWJ1TXuUFM0ebiI0OBxGGrAexEZ6oF6wkLWHX5lkYkZeTBpd/a7FfayXwA5XyqGajYg5ySBMfKwLu/jyC7+HfC9koJ3hBfjyQIDAQAB",
-				"RSA2");*/
-    	AlipayClient alipayClient = new DefaultAlipayClient("http://openapi.alipaydev.com/gateway.do",
-				"2016082700319896",
-				"MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3Jc/+CXV21ze7Ys/67YVrIvlxOVxn4lKMOMhgol3Yx/5bGt250nxhKv1yJ7mZzXXv/6aHwhGSrszsElOfRIIk+NQAlFvj1z432e/iX3vMSSKu7MBqimhnxG4rA/q2xfFUAkgn/85cIlzSmwbWEUlo5t19MTea/8ANs3HaYDo33x/Dv47/i37EnIWbE7hX/qMSbsglgbD0/hU64WfgIU+ZcebykEnq6tmGPj+7j8g582MwcfLQGc3eGWMR/MrHvttKjr5H8BUYjS9Ta5zXzF/qhLzH6EAVLo4dIf2VNeIMX41K0fkgbH+zx+GQ45ZII1E/PEk3r3sPuC5gw4ltssxHAgMBAAECggEBAKA0TEcsIPsOcWrRmZomkNFRq57WDTW17H1J4kVdYfgRoTYyPwefzjr07vQfOaQG7IY+O35/TP3hN9G8ijdEJw+ONWw4WlTn4D3cvpBm85ST2OnooLvRTFiQo8mu1m1wopPY1yNeCTXgvQ9gmk9AmdVQNSigl8JWurmBYTMjf2mEnQl90xjilOB67TYhJ2/Ay+AAZpWqXln7QzspOF0ce98v9JWTjIcCTxhBS5yS0Lum02o2DguHF/5po1sTF2R/U+rE3+FgKumnTTkbs5T0kYEKXIx9ZjbqNSayXsk+uTy0PsnQlkfi7Wlbp2VbJ+pS9+DY6qx7KbollKZKSKHhZZECgYEA/QbvRVKHXQO2HQTLznV7MuSqgeJ8+bjvbTJuMmqhhLScXTMq5MnOzXhUeMQcwR0HeD4u7OsN+gq9s8Li3Vaa6wCdiEla9wVxaH7lYX72ilfX5sOZHbrBnEOOTfoLqRExTnVNbHtApWHZOPUv7RKbjA+iLKurdzXviyQNZXbnH4kCgYEAuUyxFFlNALLkbVxLGFYlFyhiaHNAbghjLQ/GrXrM8MSn3WZHn1KaRqiSyIRJzMbRUNn0EeVKi2r/nShWeYDPu7XXWiWcmJku2Y/DYqDHsbBmGkLNFD/achW0OYYSUzAb/ywL1IRe1v3sx5qdO8StDX+WIV0RyBYJbhn4JsbSSU8CgYA4euTMH5jxrVNodNqdkmHWwW5CIfFtuNdRE7G/dUfqnHpO344Sle2gtdx9PKGChd1V/ONypSFwkBc6WiVT7PIVxQRlGKLCgyeGgNTpB3M2/FbIPx8doMN5AydvxoH10k2kStDmhzit8gKQEUMKc13fTNoRiJx0tshq0bhfzsPWqQKBgQCBJnDty+gdqpIHnyJADhq/70fXoSyxBGuLhsllNIgO8CJH7/fPlhUtVmUoGPwPHCvb/G1e4793ONZ8RRcwjJU9MdqtXDWvLmU3AjqeTY2hzV78wr6JdI/eoD4DMe0nygpZaeu87Z3knwsffCZG+CfdlqWfD21LVgCwmq0Y6c67hQKBgQCKjUkfAAFV/qLRKsZ5mfeAlkNu8ErgksstHvzW2AvRPZT805tude60EFnfWESb2a4KBNJge2h1v14v4oGwdOhRvYAHkhcyX/dR8OiQb/Iti1/6eEDwN7UkPY5i/hmgsb70wcgX2zSOfLlf9Gya7qdKYiwKBlgX/SGa3AJgKlKqlA==",
-				"json",
-				"utf-8",
-				"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu6DtX7fm2hEUVqD4+dwg0Jc0nC5R+T57JVxihKqN6b12G7Sh30ZG3ZpHr6vep24wfIHiIlRuUjAZ2MABrE2n8z1dh8N3gDKB9ljCMYqStTljADSPfXt3zwqL6ONsZhHyV7Eo8pHQEKnq+p0bRw4jSLrgyBFdlEmIp2aqOZYNKfd1bfzPCKdHteE1wnKDH4SyUc6U2dZ+Ea0wBmQMzTfTgkgArE6Oyh5fXoSZLC7nmgwZe167rWmKuTWJ1TXuUFM0ebiI0OBxGGrAexEZ6oF6wkLWHX5lkYkZeTBpd/a7FfayXwA5XyqGajYg5ySBMfKwLu/jyC7+HfC9koJ3hBfjyQIDAQAB",
-				"RSA2");
-    	
-		
-		AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();//创建API对应的request
-	    alipayRequest.setReturnUrl("http://223.88.3.254:8010/alipay-demo/paySuccess.jsp");
-	    alipayRequest.setNotifyUrl("http://223.88.3.254:8010/alipay-demo/NotifyServlet");//在公共参数中设置回跳和通知地址
-	    alipayRequest.setBizContent("{" +
-	        "    \"out_trade_no\":\"23950320010101001\"," +
-	        "    \"product_code\":\"FAST_INSTANT_TRADE_PAY\"," +
-	        "    \"total_amount\":88.88," +
-	        "    \"subject\":\"Iphone8 16G\"," +
-	        "    \"body\":\"Iphone6 16G\"," +
-	        "    \"passback_params\":\"merchantBizType%3d3C%26merchantBizNo%3d2016010101111\"," +
-	        "    \"extend_params\":{" +
-	        "    \"sys_service_provider_id\":\"2088511833207846\"" +
-	        "    }"+
-	        "  }");//填充业务参数
-	    
-	    
-	    String form="";
-	    try {
-	        form = alipayClient.pageExecute(alipayRequest).getBody(); //调用SDK生成表单
-	        
-	    } catch (AlipayApiException e) {
-	        e.printStackTrace();
-	    }
-	   /* httpResponse.setContentType("text/html;charset=utf-8");
-	    httpResponse.getWriter().write(form);//直接将完整的表单html输出到页面
-	    httpResponse.getWriter().flush();
-	    httpResponse.getWriter().close();*/
-		return form;
-	}
+ 
     
     /**
      * 用于防钓鱼，调用接口query_timestamp来获取时间戳的处理函数
@@ -191,6 +132,4 @@ public class AlipaySubmit {
 
         return result.toString();
     }
-
-	
 }

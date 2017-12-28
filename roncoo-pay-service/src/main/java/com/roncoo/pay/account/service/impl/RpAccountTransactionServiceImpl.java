@@ -107,7 +107,7 @@ public class RpAccountTransactionServiceImpl implements RpAccountTransactionServ
 	 */
 	@Transactional(rollbackFor = Exception.class)
 	public RpAccount creditToAccount(String userNo, BigDecimal amount, String requestNo, String bankTrxNo, String trxType, String remark) {
-		RpAccount account = this.getByUserNo_IsPessimist(userNo, true);
+		RpAccount account = this.getByUserNo_IsPessimist(userNo, true);//加锁即在sql语句最后加for update
 		if (account == null) {
 			throw AccountBizException.ACCOUNT_NOT_EXIT;
 		}
@@ -148,7 +148,7 @@ public class RpAccountTransactionServiceImpl implements RpAccountTransactionServ
 		accountHistoryEntity.setIsAllowSett(isAllowSett);
 		accountHistoryEntity.setAmount(amount);
 		accountHistoryEntity.setBalance(account.getBalance());
-		accountHistoryEntity.setRequestNo(requestNo);
+		accountHistoryEntity.setRequestNo(requestNo); //BankOrderNo
 		accountHistoryEntity.setBankTrxNo(bankTrxNo);
 		accountHistoryEntity.setIsCompleteSett(completeSett);
 		accountHistoryEntity.setRemark(remark);

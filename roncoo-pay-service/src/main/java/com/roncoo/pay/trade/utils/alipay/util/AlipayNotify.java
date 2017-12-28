@@ -1,8 +1,7 @@
 package com.roncoo.pay.trade.utils.alipay.util;
 
-import com.roncoo.pay.trade.utils.alipay.AlipayConfigUtil;
+import com.roncoo.pay.trade.utils.alipay.config.AlipayConfigUtil;
 import com.roncoo.pay.trade.utils.alipay.sign.MD5;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

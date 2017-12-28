@@ -1,8 +1,7 @@
 package com.roncoo.pay.trade.utils.alipay.util.httpClient;
 
+import com.roncoo.pay.trade.utils.alipay.config.AlipayConfigUtil;
 import org.apache.commons.httpclient.Header;
-
-import com.roncoo.pay.trade.utils.alipay.AlipayConfigUtil;
 
 import java.io.UnsupportedEncodingException;
 

@@ -34,6 +34,15 @@ public class PollingParam {
      * 通知后用于判断是否成功的返回值（成功标识）,由HttpResponse获取
      */
     private String successValue;
+    
+    /**
+     * 最大通知次数限制.
+     * @return
+     */
+    public Integer getMaxNotifyTimes() {
+        return notifyParams == null ? 0 : notifyParams.size();
+    }
+    
 
     public Map<Integer, Integer> getNotifyParams() {
         return notifyParams;
@@ -49,14 +58,6 @@ public class PollingParam {
 
     public void setSuccessValue(String successValue) {
         this.successValue = successValue;
-    }
-
-    /**
-     * 最大通知次数限制.
-     * @return
-     */
-    public Integer getMaxNotifyTimes() {
-        return notifyParams == null ? 0 : notifyParams.size();
     }
 
 }

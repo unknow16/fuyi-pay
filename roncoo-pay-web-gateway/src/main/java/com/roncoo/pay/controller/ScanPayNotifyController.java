@@ -50,45 +50,6 @@ public class ScanPayNotifyController {
     @Autowired
     private RpTradePaymentManagerService rpTradePaymentManagerService;
 
-    /**
-     * 用户支付成功后，支付宝/微信 异步通知请求该url
-     * 
-     * http://roncoo.iok.la/roncoo-pay-web-gateway/scanPayNotify/notify/ALIPAY?
-     * https://商家网站通知地址?
-     * 		voucher_detail_list=
-     * 		[{"amount":"0.20",
-     * 			"merchantContribute":"0.00",
-     * 			"name":"5折券","otherContribute":"0.20",
-     * 			"type":"ALIPAY_DISCOUNT_VOUCHER","voucherId":"2016101200073002586200003BQ4"
-     * 		}]&
-     * 		fund_bill_list=[
-     * 			{"amount":"0.80","fundChannel":"ALIPAYACCOUNT"},
-     * 			{"amount":"0.20","fundChannel":"MDISCOUNT"}]&
-     * 		subject=PC网站支付交易&
-     * 		trade_no=2016101221001004580200203978&
-     * 		gmt_create=2016-10-12 21:36:12&
-     * 		notify_type=trade_status_sync&
-     * 		total_amount=1.00&
-     * 		out_trade_no=mobile_rdm862016-10-12213600&
-     * 		invoice_amount=0.80&
-     * 		seller_id=2088201909970555&
-     * 		notify_time=2016-10-12 21:41:23&
-     * 		trade_status=TRADE_SUCCESS&
-     * 		gmt_payment=2016-10-12 21:37:19&
-     * 		receipt_amount=0.80&
-     * 		passback_params=passback_params123&
-     * 		buyer_id=2088102114562585&
-     * 		app_id=2016092101248425&
-     * 		notify_id=7676a2e1e4e737cff30015c4b7b55e3kh6&
-     * 		sign_type=RSA2&
-     * 		buyer_pay_amount=0.80&
-     * 		sign=***&
-     * 		point_amount=0.00
-     * @param payWayCode
-     * @param httpServletRequest
-     * @param httpServletResponse
-     * @throws Exception
-     */
     @RequestMapping("/notify/{payWayCode}")
     public void notify(@PathVariable("payWayCode") String  payWayCode , HttpServletRequest httpServletRequest , HttpServletResponse httpServletResponse) throws Exception {
 
@@ -111,24 +72,7 @@ public class ScanPayNotifyController {
     }
 
     /**
-     * 买家扫码支付成功后，配置给支付宝同步返回请求此路径
-     * 根据本系统的商户配置的return_url返回相应url
-     * 
-     * 最新支付宝sdk,同步返回的请求中sdk内已完成验签，2017，12，1
-     * 
-     * http://roncoo.iok.la/roncoo-pay-web-gateway/scanPayNotify/result/ALIPAY?
-     * total_amount=0.10&
-     * timestamp=2017-12-12+10%3A17%3A08&
-     * sign=MHIi%2Ftf9%2FYCi1ozZ1xJ1f2Dqjdq8O741aIZ36DkpPgROOmC8Y2tt7pe%2BQsUs5JjsSomozDE0H1eEjexx7tq4Zi%2FlszG9rySvgu0qTZa%2FS8%2F0FJusk70f01fLfil7RhUsVh6ZxzaFPPFO6AH%2FjPqmtlD6WA7DAiNAj7ZU%2Fu45W8D%2B6a0F8YNSdTzGvNCMe7zv05iPHM31o%2B5Z6UHtX89HVf8jbjgVwh%2Bv3kWh5Zmnex5wtu5o3%2BBQIcPhAbMhiYoBlLYxrfHOmTj6dJJ%2F02qhqxbybFtsFnlGOjxCffyjVcpUf7lu1PKi%2Bj1HHCx0PeI%2FyHRzSmtsT37DcoTYtRkZGg%3D%3D&
-     * trade_no=2017121221001004750200160995&
-     * sign_type=RSA2&
-     * auth_app_id=2016082700319896&
-     * charset=utf-8&
-     * seller_id=2088102173194640&
-     * method=alipay.trade.page.pay.return&
-     * app_id=2016082700319896&
-     * out_trade_no=66662017121210000021&
-     * version=1.0
+     * 支付宝同步回调，返回商户界面，不对订单状态做修改
      * @param payWayCode
      * @param httpServletRequest
      * @param model

@@ -15,19 +15,18 @@
  */
 package com.roncoo.pay.app.polling.core;
 
+import com.roncoo.pay.app.polling.App;
+import com.roncoo.pay.common.core.utils.DateUtils;
+import com.roncoo.pay.notify.entity.RpOrderResultQueryVo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Date;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.roncoo.pay.app.polling.App;
-import com.roncoo.pay.common.core.utils.DateUtils;
-import com.roncoo.pay.notify.entity.RpOrderResultQueryVo;
-
 /**
- * <b>功能说明:
+ * <b>功能说明:轮询延时任务
  * </b>
  *
  * @author Peter
@@ -37,7 +36,7 @@ public class PollingTask implements Runnable, Delayed {
 
     private static final Logger LOG = LoggerFactory.getLogger(PollingTask.class);
 
-    private long executeTime;
+    private long executeTime; //任务执行时间
 
     private PollingPersist pollingPersist = App.pollingPersist;
 
@@ -49,7 +48,7 @@ public class PollingTask implements Runnable, Delayed {
     public PollingTask(RpOrderResultQueryVo rpOrderResultQueryVo) {
         super();
         this.rpOrderResultQueryVo = rpOrderResultQueryVo;
-        this.executeTime = getExecuteTime(rpOrderResultQueryVo);
+        this.executeTime = getExecuteTime(rpOrderResultQueryVo); //获取下次通知执行时间
     }
 
     /**
@@ -63,8 +62,11 @@ public class PollingTask implements Runnable, Delayed {
         Integer notifyTimes = rpOrderResultQueryVo.getNotifyTimes(); // 已通知次数
         LOG.info("===>pollingTimes:{}",notifyTimes);
         //Integer nextNotifyTimeInterval = pollingParam.getNotifyParams().get(notifyTimes + 1); // 当前发送次数对应的时间间隔数（分钟数）
+        
+        //轮询规则map中，下一个通知次数，对应的时间间隔值
         Integer nextNotifyTimeInterval = rpOrderResultQueryVo.getNotifyRuleMap().get(String.valueOf(notifyTimes + 1)); // 当前发送次数对应的时间间隔数（分钟数）
-        long nextNotifyTime = (nextNotifyTimeInterval == null ? 0 : nextNotifyTimeInterval * 60 * 1000) + lastNotifyTime;
+        
+        long nextNotifyTime = (nextNotifyTimeInterval == null ? 0 : nextNotifyTimeInterval * 1000) + lastNotifyTime;
         LOG.info("===>notify id:{}, nextNotifyTime:{}" ,rpOrderResultQueryVo.getId() , DateUtils.formatDate(new Date(nextNotifyTime), "yyyy-MM-dd HH:mm:ss SSS"));
         return nextNotifyTime;
     }

@@ -89,9 +89,9 @@ function changeSelect(){
     }
 }
 	
-$("#payWayCode").change(function(){
-	changeSelect();
-});
-
-changeSelect();
+	 $("#payWayCode").change(function(){
+		 changeSelect();
+	    });
+	 
+	 changeSelect();
 </script>
